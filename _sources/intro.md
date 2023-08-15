@@ -88,12 +88,16 @@ Facultad de ingeniería, Ingeniería de Sistemas
 
 ::::
 
+---
+
 ## Objetivos del curso:
 
 - Profundizar en Software I
 - Aplicar la ingeniería de requisitos
 - Diseñar y proyectar arquitecturas de software
 - Fomentar el trabajo en equipo para desarrollar software
+
+---
 
 ## Contenido del curso
 
@@ -246,6 +250,8 @@ Computación en la Nube
 
 ::::
 
+---
+
 ## Información del curso
 
 - Horarios de clases: martes (7am a 9am) y viernes (2pm a 4:30pm)
@@ -257,6 +263,8 @@ Computación en la Nube
   <img src="images/recomendaciones.png" />
 </div>
 
+---
+
 ## Resultados de aprendizaje
 
 1. Elaborar un documento de requisitos
@@ -265,7 +273,7 @@ Computación en la Nube
 4. Definir una arquitectura de software para una aplicación
 5. Implementar una aplicación computacional basada en ingeniería de requerimientos
 
-
+---
 
 ## Bibliografía
 Estas son algunas de las referencias usadas para este curso, vuelve pronto para encontrar más contenido.
@@ -327,6 +335,8 @@ Estas son algunas de las referencias usadas para este curso, vuelve pronto para 
 
 ::::
 
+---
+
 ## Reglas de Juego 🕹️📏
 
 * Clases magistrales para conceptualización del tema.
@@ -343,6 +353,8 @@ Estas son algunas de las referencias usadas para este curso, vuelve pronto para 
 <img src="images/Evaluacion.png" width="600" height="400" />
 :::
 ::::
+
+---
 
 ## Manos a la Obra! 📚💻🐍
 
