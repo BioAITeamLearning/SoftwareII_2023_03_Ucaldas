@@ -61,7 +61,7 @@ Google ha enfrentado críticas por la falta de diversidad y inclusión en su fue
 
 ### Tarea 📕
 
-:::{warnings}
+:::{important}
 Resolver en parejas las actividades de clase utilizando ChatGPT y entregar un resumen de los resultados.
 :::
 
