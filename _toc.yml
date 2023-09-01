@@ -16,6 +16,7 @@ chapters:
     - file: "Unidades/Unidad_2/Clase2_Semana2_EstructurasParaSoftwareJava"
     - file: "Unidades/Unidad_2/Clase2_Semana2_EstructurasParaSoftwarePython"
     - file: "Unidades/Unidad_2/Clase2_Semana2_Manejo_ficheros"
+    - file: "Unidades/Unidad_2/Repaso_DB_conn_IntroORM"
 - file: Unidad3
 - file: Unidad4
 - file: Unidad5
