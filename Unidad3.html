@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Unidad 4: Ingeniería de requisitos" href="Unidad4.html" />
-    <link rel="prev" title="Unidad 2: Repaso Programación Python y Java para backend" href="Unidad2.html" />
+    <link rel="prev" title="Manejo de archivos" href="Unidades/Unidad_2/Clase2_Semana2_Manejo_ficheros.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -159,10 +159,59 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="Unidad1.html">Unidad 1: Desarrollo en Equipo</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_1/clase1_2.html">Integrantes y roles de un equipo de desarrollo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_1/Evaluemos%20_Unidad1.html">Actividades para la clase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_1/Evaluemos_Unidad1.html">Actividades para la clase</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Unidad2.html">Unidad 2: Repaso Programación Python y Java para backend</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Unidad2.html">Unidad 2: Repaso Programación Python y Java para backend</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_2/repaso_python_java.html">Repaso de Python y Java para desarrollo de software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_2/Clase1_Semana2_TiposDeDatosCondicionalesCiclosColeccionesFunciones.html"><strong>Introducción</strong></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_2/Clase2_Semana2_EstructurasParaSoftwareJava.html">Repaso Estructuras Java Vs Python</a></li>
+
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_2/Clase2_Semana2_EstructurasParaSoftwarePython.html">Función útil para ver los métodos de un objeto</a></li>
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_2/Clase2_Semana2_Manejo_ficheros.html">Manejo de archivos</a></li>
+
+
+</ul>
+</li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Unidad 3: Modelos de procesos de software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad4.html">Unidad 4: Ingeniería de requisitos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad5.html">Unidad 5: Requisitos funcionales y NO funcionales</a></li>
@@ -368,7 +417,14 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procesos-de-software">Procesos de Software</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptos-a-conocer-de-un-proceso-de-software">Conceptos a conocer de un proceso de software</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-para-una-tarea-especifica">Ejemplo para una tarea específica</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-procesos-de-software">Tipos de procesos de software</a></li>
 </ul>
             </nav>
         </div>
@@ -386,8 +442,120 @@ document.write(`
 <h2>Contenido de la unidad<a class="headerlink" href="#contenido-de-la-unidad" title="Permalink to this heading">#</a></h2>
 <img src="images/contenidoU3.png"/>
 </section>
-<section id="espere-aca-el-contenido-de-las-siguientes-versiones">
-<h2>Espere acá el contenido de las siguientes versiones<a class="headerlink" href="#espere-aca-el-contenido-de-las-siguientes-versiones" title="Permalink to this heading">#</a></h2>
+<hr class="docutils" />
+<section id="procesos-de-software">
+<h2>Procesos de Software<a class="headerlink" href="#procesos-de-software" title="Permalink to this heading">#</a></h2>
+<p>También llamados los ciclos de vida del software, son metodologías para el desarrollo de software de manera sistematizada y en equipo.</p>
+<p><strong>Permiten estructurar y medir el avance de un proyecto</strong></p>
+<img src="images/U3_1.png"/>
+<p>En rasgos generales el proceso de desarrollo de software contempla grandes etapas,</p>
+<ul class="simple">
+<li><p><strong>Especificación</strong> en la que se toman los requerimientos, se definen los objetivos del proyecto, las fases y el plan de trabajo</p></li>
+<li><p><strong>Diseño e implementación</strong> es la etapa de codificar las funciones, módulos, versiones del software (es la etapa de programar)</p></li>
+<li><p><strong>Verificación y validación</strong> es la etapa de retroalimentación por parte de los tester, de los usuarios para validar lo que se implementa.</p></li>
+</ul>
+<hr class="docutils" />
+<section id="conceptos-a-conocer-de-un-proceso-de-software">
+<h3>Conceptos a conocer de un proceso de software<a class="headerlink" href="#conceptos-a-conocer-de-un-proceso-de-software" title="Permalink to this heading">#</a></h3>
+<img src="images/U3_2.png"/>
+<p>En cada proceso se maneja la misma convención.</p>
+<p>Para los proyectos:</p>
+<ul class="simple">
+<li><p>Todo se organiza por <strong>fases</strong> (objetivo general), que son etapas específicas acumulativas.</p></li>
+<li><p>Cada fase cuenta con <strong>actividades</strong> (objetivos específicos) generales que describen los objetivos que se desean cumplir en esa fase.</p></li>
+<li><p>Cada actividad cuenta con <strong>tareas</strong>, unidades muy específicas a realizar que no toman más de un día en realizarse. son la unidad más granular del proceso de software.</p></li>
+</ul>
+<section id="ejemplo-para-una-tarea-especifica">
+<h4>Ejemplo para una tarea específica<a class="headerlink" href="#ejemplo-para-una-tarea-especifica" title="Permalink to this heading">#</a></h4>
+<img src="images/U3_3.png"/>
+<p>Este es un ejemplo en el que se ve como es la estructura para una tarea específica</p>
+<ol class="arabic simple">
+<li><p>una actividad contiene tareas</p></li>
+<li><p>un Rol determinado desarrolla esa tarea</p></li>
+<li><p>una tarea consume recursos -&gt; (tiempo, dinero, tecnología)</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Una <strong>TAREA</strong> usa productos, los productos son documentos o resultados de las fases iniciales, puede ser un documento de requerimientos, el diseño de una arquitectura,etc.</p>
+<p>y a su vez la <strong>TAREA</strong> genera nuevos productos: una funcionalidad, un documento de reporte de pruebas, etc</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+¿Qué cosas se consideran una tarea?<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><img alt="tarea" src="_images/U3_4.png" /></p>
+<ul class="simple">
+<li><p class="sd-card-text">Escribir una pieza de código de software</p></li>
+<li><p class="sd-card-text">Diseñar una característica</p></li>
+<li><p class="sd-card-text">Escribir documentación</p></li>
+<li><p class="sd-card-text">Instalación de una librería</p></li>
+<li><p class="sd-card-text">Probar una función</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Roles dentro de un equipo de desarrollo de software<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><img alt="roles" src="_images/U3_5.png" /></p>
+<ul class="simple">
+<li><p class="sd-card-text">Programador (También se le llama desarrollador)</p></li>
+<li><p class="sd-card-text">Tester (Se le denomina QA, Quality Assurance)</p></li>
+<li><p class="sd-card-text">CEO (Gerente de la compañía, Chief Executive Officer)</p></li>
+<li><p class="sd-card-text">Cliente (Cliente final - no confundir con el usuario final -)</p></li>
+<li><p class="sd-card-text">Gerente de proyecto ( Conocido como project manager)</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p class="sd-card-text">Se debe mencionar que, aunque estos son diferentes a los roles del desarrollo en equipo, para la metodología TSP se definen otros nombres de roles.
+Estos son solo un ejemplo de los roles que están involucrados, no son los únicos y no son el único nombre que pueden tener.</p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Productos / artefactos<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><img alt="productos" src="_images/U3_6.png" /></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Producto</p></th>
+<th class="head"><p class="sd-card-text">Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">* Diseños</p></td>
+<td><p class="sd-card-text">* Tiempo</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">* Requisitos</p></td>
+<td><p class="sd-card-text">* Dinero</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">* Código fuente</p></td>
+<td><p class="sd-card-text">* Tecnología</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">* Casos de prueba</p></td>
+<td><p class="sd-card-text">* Conocimiento</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">* Documentación interna</p></td>
+<td><p class="sd-card-text">* Personal (Talento Humano)</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Ejemplos de productos / artefactos y recursos</p>
+<p class="sd-card-text"><img alt="productos_ej" src="_images/U3_7.png" /></p>
+</div>
+</details></section>
+</section>
+</section>
+<section id="tipos-de-procesos-de-software">
+<h2>Tipos de procesos de software<a class="headerlink" href="#tipos-de-procesos-de-software" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -423,12 +591,12 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Unidad2.html"
+       href="Unidades/Unidad_2/Clase2_Semana2_Manejo_ficheros.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Unidad 2: Repaso Programación Python y Java para backend</p>
+        <p class="prev-next-title">Manejo de archivos</p>
       </div>
     </a>
     <a class="right-next"
@@ -459,7 +627,14 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procesos-de-software">Procesos de Software</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptos-a-conocer-de-un-proceso-de-software">Conceptos a conocer de un proceso de software</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-para-una-tarea-especifica">Ejemplo para una tarea específica</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-procesos-de-software">Tipos de procesos de software</a></li>
 </ul>
   </nav></div>
 
