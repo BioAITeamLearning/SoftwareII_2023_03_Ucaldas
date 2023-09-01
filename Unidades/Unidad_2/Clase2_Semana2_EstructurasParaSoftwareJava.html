@@ -195,7 +195,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-
 <li class="toctree-l2"><a class="reference internal" href="Clase2_Semana2_EstructurasParaSoftwarePython.html">Función útil para ver los métodos de un objeto</a></li>
 
 
@@ -206,8 +205,16 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-
 <li class="toctree-l2"><a class="reference internal" href="Clase2_Semana2_Manejo_ficheros.html">Manejo de archivos</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="Repaso_DB_conn_IntroORM.html">Recordemos lo que es una base de datos</a></li>
+
+
+
+
+
+
 
 
 </ul>
@@ -459,7 +466,6 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#decoradores">Decoradores</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaces">Interfaces</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#consumo-de-api-s-usando-modulos-de-java">Consumo de API’s usando módulos de Java</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#siguiente-capitulo-vscode-fast-api-postman-orms-database-connections">Siguiente Capitulo: Vscode, Fast API, PostMan,ORMs, DataBase Connections…</a></li>
 </ul>
 
             </nav>
@@ -483,9 +489,9 @@ document.write(`
 #!/usr/bin/env bash
 
 echo &quot;Update environment...&quot;
-apt update -q  &amp;&gt; /dev/null 
+apt update -q  &amp;&gt; /dev/null
 
-echo &quot;Install Java...&quot; 
+echo &quot;Install Java...&quot;
 apt-get install -q openjdk-11-jdk-headless &amp;&gt; /dev/null
 
 echo &quot;Install Jupyter java kernel...&quot;
@@ -495,7 +501,7 @@ curl -L https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.
 unzip -q ijava-kernel.zip -d ijava-kernel \
  &amp;&amp; cd ijava-kernel \
  &amp;&amp; python3 install.py --sys-prefix &amp;&gt; /dev/null
- 
+
 echo &quot;Install proxy for the java kernel&quot;
 # NOTE: required after changes to Google Colab defaults in Dec. 2022
 # See https://stackoverflow.com/questions/74674688/google-colab-notebook-using-ijava-stuck-at-connecting-after-installation-ref/74821762#74821762
@@ -644,7 +650,7 @@ Proxy kernel installed. Go to &#39;Runtime &gt; Change runtime type&#39; and sel
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Animal</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
-<span class="w">    </span>
+
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">hacerSonido</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Haciendo sonido de animal&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
@@ -716,7 +722,7 @@ Miau miau!
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">abstract</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">speak</span><span class="p">();</span>
-<span class="w">    </span>
+
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -910,9 +916,6 @@ Meow!
 </div>
 </div>
 </section>
-<section id="siguiente-capitulo-vscode-fast-api-postman-orms-database-connections">
-<h1>Siguiente Capitulo: Vscode, Fast API, PostMan,ORMs, DataBase Connections…<a class="headerlink" href="#siguiente-capitulo-vscode-fast-api-postman-orms-database-connections" title="Permalink to this heading">#</a></h1>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -993,7 +996,6 @@ Meow!
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#decoradores">Decoradores</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaces">Interfaces</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#consumo-de-api-s-usando-modulos-de-java">Consumo de API’s usando módulos de Java</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#siguiente-capitulo-vscode-fast-api-postman-orms-database-connections">Siguiente Capitulo: Vscode, Fast API, PostMan,ORMs, DataBase Connections…</a></li>
 </ul>
 
   </nav></div>

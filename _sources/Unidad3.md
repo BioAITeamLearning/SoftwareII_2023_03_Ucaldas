@@ -89,7 +89,7 @@ Estos son solo un ejemplo de los roles que están involucrados, no son los únic
     
 ![productos](images/U3_6.png)
 
-| Producto | Descripción |
+| Producto | Recursos |
 | --- | --- |
 |* Diseños|* Tiempo|
 |* Requisitos|* Dinero|
@@ -97,15 +97,14 @@ Estos son solo un ejemplo de los roles que están involucrados, no son los únic
 |* Casos de prueba|* Conocimiento|
 |* Documentación interna|* Personal (Talento Humano)|
 
+![im]([images/U3_7.png](https://www.comunidadbaratz.com/wp-content/uploads/2021/03/La-gestion-documental-consiste-en-la-captura-el-almacenamiento-y-la-recuperacion-de-los-documentos.jpg))
+
 ##### Ejemplos de productos / artefactos y recursos
 
 ![productos_ej](images/U3_7.png)
 
+
 ::::
 
 
-
 ## Tipos de procesos de software
-
-
-
