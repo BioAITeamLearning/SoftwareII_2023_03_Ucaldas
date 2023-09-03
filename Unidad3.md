@@ -13,7 +13,6 @@ title: Unidad 3
 
 También llamados los ciclos de vida del software, son metodologías para el desarrollo de software de manera sistematizada y en equipo.
 
-
 **Permiten estructurar y medir el avance de un proyecto**
 
 <img src="images/U3_1.png"/>
@@ -86,8 +85,9 @@ Estos son solo un ejemplo de los roles que están involucrados, no son los únic
 ::::
 
 ::::{dropdown} Productos / artefactos
-    
-![productos](images/U3_6.png)
+
+![im](https://www.comunidadbaratz.com/wp-content/uploads/2021/03/La-gestion-documental-consiste-en-la-captura-el-almacenamiento-y-la-recuperacion-de-los-documentos.jpg)
+
 
 | Producto | Recursos |
 | --- | --- |
@@ -97,14 +97,82 @@ Estos son solo un ejemplo de los roles que están involucrados, no son los únic
 |* Casos de prueba|* Conocimiento|
 |* Documentación interna|* Personal (Talento Humano)|
 
-![im]([images/U3_7.png](https://www.comunidadbaratz.com/wp-content/uploads/2021/03/La-gestion-documental-consiste-en-la-captura-el-almacenamiento-y-la-recuperacion-de-los-documentos.jpg))
+![productos](images/U3_6.png)
 
 ##### Ejemplos de productos / artefactos y recursos
 
-![productos_ej](images/U3_7.png)
+::::{card-carousel} 1
 
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+
+```{image} images/U3_7.png
+```
+
+:::
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+
+```{image} images/U3_8.png
+```
+
+:::
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+
+```{image} images/U3_9.png
+```
+
+:::
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+
+```{image} images/U3_10.png
+```
+
+:::
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+
+```{image} images/U3_11.png
+```
+
+:::
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+
+```{image} images/U3_12.png
+```
+
+:::
 
 ::::
 
+::::{dropdown} Buenas prácticas para las tareas
 
-## Tipos de procesos de software
+* Planificar el alcance de la tarea de acuerdo a la versión
+* Estimación de la duración de las tareas
+* Realización de breves reuniones diarias
+
+```{image} images/U3_13.png
+```
+
+::::
+

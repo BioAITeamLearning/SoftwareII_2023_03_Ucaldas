@@ -15,9 +15,13 @@ chapters:
     - file: "Unidades/Unidad_2/Clase1_Semana2_TiposDeDatosCondicionalesCiclosColeccionesFunciones"
     - file: "Unidades/Unidad_2/Clase2_Semana2_EstructurasParaSoftwareJava"
     - file: "Unidades/Unidad_2/Clase2_Semana2_EstructurasParaSoftwarePython"
+    - file: "Unidades/Unidad_2/Clase2_Semana2_Pandas_10_08_2023"
     - file: "Unidades/Unidad_2/Clase2_Semana2_Manejo_ficheros"
-    - file: "Unidades/Unidad_2/Repaso_DB_conn_IntroORM"
+    
 - file: Unidad3
+  sections:
+    - file: "Unidades/Unidad_3/Tipos_procesos_Software"
+    - file: "Unidades/Unidad_3/Repaso_DB_conn_IntroORM"
 - file: Unidad4
 - file: Unidad5
 - file: Unidad6
