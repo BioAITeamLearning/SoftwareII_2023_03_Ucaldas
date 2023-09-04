@@ -11,7 +11,7 @@ El taller debe tener el siguiente nombre: **SoftwareII_Taller2_NombreApellido_20
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
-:link: https://github.com/BioAITeamLearning/ProgCD_2023_03_Ucaldas/raw/main/Unidades/Unidad_3/Taller_2_Procesos_de_Software.docx
+:link: https://github.com/BioAITeamLearning/SoftwareII_2023_03_Ucaldas/raw/main/Unidades/Unidad_3/Taller_2_Procesos_de_Software.docx
 **💬 Taller 2**
 ^^^
 ```{image} https://gcloud.devoteam.com/wp-content/uploads/sites/32/2021/08/Google_Docs_logo_2014-2020.svg.png
