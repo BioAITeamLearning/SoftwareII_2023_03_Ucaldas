@@ -55,7 +55,7 @@ Pertenece al entorno académico (Docente)
 :class-body: text-center
 :class-header: bg-light text-center
 
-```{image} ../../images/rts.png
+```{image} ../../_static/images/rts.png
 :height: 100
 :class: rounded
 ```
@@ -111,7 +111,7 @@ Dar soporte y guía al grupo en la tareas de planeación y seguimiento del proye
 ```
 
 ```{dropdown} Administrador de calidad
-Dar soporte en definir las necesidades del proceso, en hacer el plan de calidad y en hacer seguimiento al proceso y a la calidad del producto.
+Encargado de dar soporte, definir las necesidades del proceso, hacer el plan de calidad y hacer seguimiento al proceso y a la calidad del producto.
 
 <img src="https://humanidades.com/wp-content/uploads/2017/05/calidad-total-1-e1569807634807.jpg" />
 
@@ -154,7 +154,7 @@ Dar soporte al grupo en la determinación, obtención y administración de las h
 ## Proceso de desarrollo de software: TSP
 Tiene un marco de trabajo definido basado en **procesos**
 
-<img src="../../images/TSP_intro.png" />
+<img src="../../_static/images/TSP_intro.png" />
 
 ---
 
@@ -182,7 +182,7 @@ Tiene un marco de trabajo definido basado en **procesos**
 
 ## Estructura del TSP
 
-<img src="../../images/tsp_estruct.png"/>
+<img src="../../_static/images/tsp_estruct.png"/>
 
 ---
 
@@ -198,11 +198,11 @@ Tiene un marco de trabajo definido basado en **procesos**
 ### Fases de TSP
 TSP recomienda las siguientes fases, pero se pueden personalizar
 
-<img src="../../images/fasesTSP.png">
+<img src="../../_static/images/fasesTSP.png">
 
 ---
 
-### lanzamiento de procesos TSP
+### Lanzamiento de procesos TSP
 
 **Se hace:**
 
@@ -223,7 +223,7 @@ TSP recomienda las siguientes fases, pero se pueden personalizar
 
 ### Ciclo de vida de TSP en la práctica
 
-<img src="../../images/ciclo_vida_TSP_pract.png">
+<img src="../../_static/images/ciclo_vida_TSP_pract.png">
 
 ---
 
@@ -232,7 +232,7 @@ La estrategia consiste en discutir las diferentes formas de construir el product
 
 Determinar – de manera preliminar – los ciclos  requeridos
 
-<img src="../../images/model_CU.png">
+<img src="../../_static/images/model_CU.png">
 
 ---
 
@@ -266,7 +266,7 @@ Después de definir la estrategia, se elaboran planes detallados **solo para el 
 * Cada tarea debe poder realizarse en un día
 * Se pueden tener tareas compartidas, pero lo ideal es que cada tarea tenga un solo responsable
 
-<img src="../../images/planeacionTable.png" />
+<img src="../../_static/images/planeacionTable.png" />
 
 ---
 
@@ -274,7 +274,7 @@ Después de definir la estrategia, se elaboran planes detallados **solo para el 
 * Asignar tareas a cada individuo
 * Balancear la carga de tabajo con todos los miembros del equipo
 
-<img src="../../images/plan_indiv.png" />
+<img src="../../_static/images/plan_indiv.png" />
 
 ---
 
@@ -284,22 +284,22 @@ Calidad del proceso de desarrollo
 * Cantidad de defectos que se insertarán (o inyectarán) en los productos
 * Cantidad de defectos que se eliminarán en cada actividad de calidad 
 
-<img src="../../images/planeacionCalidad.png">
+<img src="../../_static/images/planeacionCalidad.png">
 
 ---
 
 #### Actividades de calidad
-<img src="../../images/activCalidad.png">
+<img src="../../_static/images/activCalidad.png">
 
 ---
 
 #### Producción de un plan de calidad
-<img src="../../images/plan_calidad.png">
+<img src="../../_static/images/plan_calidad.png">
 
 ---
 
 ##### Ejemplo de un plan de calidad
-<img src="../../images/ejemploPCalidad.png">
+<img src="../../_static/images/ejemploPCalidad.png">
 
 * En revisiones e inspecciones tener como meta eliminar más del 50 % de los defectos
 * En pruebas tener como meta eliminar el 50 % de los defectos
@@ -307,7 +307,7 @@ Calidad del proceso de desarrollo
 ---
 
 ### Los planes se deben relacionar
-<img src="../../images/planesRelac.png">
+<img src="../../_static/images/planesRelac.png">
 
 ---
 

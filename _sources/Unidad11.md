@@ -5,6 +5,6 @@ title: Unidad 11
 
 ## Contenido de la unidad
 
-<img src="images/contenidoU11.png"/>
+<img src="_static/images/contenidoU11.png"/>
 
 ## Espere acá el contenido de las siguientes versiones

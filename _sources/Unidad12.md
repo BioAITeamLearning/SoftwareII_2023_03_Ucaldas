@@ -5,6 +5,6 @@ title: Unidad 12
 
 ## Contenido de la unidad
 
-<img src="images/contenidoU12.png"/>
+<img src="_static/images/contenidoU12.png"/>
 
 ## Espere acá el contenido de las siguientes versiones

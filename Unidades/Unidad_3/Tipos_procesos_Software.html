@@ -222,10 +222,19 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l2"><a class="reference internal" href="EvaluemosLoAprendido.html">Evaluemos lo aprendido!!</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../Unidad4.html">Unidad 4: Ingeniería de requisitos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Unidad5.html">Unidad 5: Requisitos funcionales y NO funcionales</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad4.html">Unidad 4: Ingeniería de requisitos</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_4/Niveles_RF_RNF.html">Niveles de requisitos</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_4/EvaluemosLoAprendido.html">🚀 Vamos a la acción…</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad5.html">Unidad 5: Requisitos funcionales y NO funcionales</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_5/EvaluemosLoAprendido.html">🚀 Vamos a la acción…</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../Unidad6.html">Unidad 6: Historias de usuario y casos de uso</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Unidad7.html">Unidad 7: Especificación y formatos para HU y CU</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Unidad8.html">Unidad 8: Mockup’s y UI’s</a></li>
@@ -461,13 +470,13 @@ document.write(`
 <li><p>Creación de prototipos</p></li>
 <li><p>Entrega continua</p></li>
 </ul>
-<p>Cada uno de estos sirve dependiendo del tipo de producto o desarrollo que queramos realizar, las necesidades, tiempos y stakeholders con los que se cuente.</p>
+<p>Cada uno de estos se implementa dependiendo de: el tipo de desarrollo que realicemos, las necesidades, tiempos y stakeholders con los que se cuente.</p>
 <hr class="docutils" />
 <section id="modelos-lineales">
 <h2>🛣️ Modelos lineales<a class="headerlink" href="#modelos-lineales" title="Permalink to this heading">#</a></h2>
-<p><strong>En este modelo la siguiente fases no puede empezar sin que termine la fase anterior.</strong></p>
-<p>No hay retroalimentación continua por parte del cliente final, no está involucrado <strong>completamente</strong> en todo el desarrollo.</p>
-<p>Consume muchos recursos cuando <strong>NO</strong> se hace una buena planeación.</p>
+<p><strong>En este modelo la fase siguiente no puede empezar sin que termine la fase anterior.</strong></p>
+<p>El cliente final no está involucrado <strong>Completamente</strong> en el proceso de software (No hay retroalimentación).</p>
+<p>Estos procesos pueden consumir muchos recursos cuando <strong>NO</strong> se planea adecuadamente.</p>
 <p>Dentro de los modelos lineales tenemos:</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -478,7 +487,7 @@ Cascada (Waterfall)<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <img alt="../../_images/U3_14.png" src="../../_images/U3_14.png" />
 <ul class="simple">
-<li><p class="sd-card-text">Solo se involucra el cliente en el arranque del proyecto y en la última etapa de verificación (cuando el sistema está completamente desplegado).</p></li>
+<li><p class="sd-card-text">Solo se involucra al cliente en dos momentos: En el arranque del proyecto y en la última etapa de verificación (cuando el sistema está completamente desplegado).</p></li>
 <li><p class="sd-card-text"><strong>No permite ejecutar fases en paralelo.</strong></p></li>
 </ul>
 </div>
@@ -491,10 +500,10 @@ V-Model<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <img alt="../../_images/U3_15.png" src="../../_images/U3_15.png" />
 <ul class="simple">
-<li><p class="sd-card-text">Es una mejora al de cascada.</p></li>
-<li><p class="sd-card-text">Se tiene en cuenta un proceso más riguroso de calidad, de acuerdo a los documentos y fases iniciales del proyecto (requerimientos, diseños)</p></li>
-<li><p class="sd-card-text">El cliente solo ve el desarrollo hasta la última etapa.</p></li>
-<li><p class="sd-card-text">En este el cliente se involucra al cliente al principio y al final, y se debe tener una buena cantidad de información inicial y un buen proceso de requerimientos para entender la idea del cliente.</p></li>
+<li><p class="sd-card-text">Es una mejora al modelo de cascada.</p></li>
+<li><p class="sd-card-text">Tiene un proceso más riguroso de calidad, basado en los documentos y fases iniciales del proyecto (requerimientos, diseños)</p></li>
+<li><p class="sd-card-text">El cliente solo ve el resultado final del desarrollo en la última etapa.</p></li>
+<li><p class="sd-card-text">Se debe tener una gran cantidad de información inicial y un buen proceso de requerimientos para entender la idea del cliente. ya que, el cliente valida y retroalimenta el proceso hasta el final del proyecto.</p></li>
 </ul>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -514,19 +523,19 @@ Modelo Diente de sierra<div class="sd-summary-down docutils">
 <hr class="docutils" />
 <section id="modelos-en-espiral">
 <h2>🌀 Modelos en espiral<a class="headerlink" href="#modelos-en-espiral" title="Permalink to this heading">#</a></h2>
-<p>Es un proceso iterativo, que realiza las fases por etapas de <strong>4</strong> pasos
-se tiene en cuenta mucho la calidad del proceso. y se analiza antes de la implementación los posibles riesgos de esa fase.</p>
-<img src="../../images/U3_17.png" />
-<p>Este proceso divide la espiral en 4 sectores. Cada cuadrante contiene un tipo de proceso iterativo diferente</p>
+<p>Es un proceso iterativo, que realiza cada fase por etapas de <strong>4</strong> pasos.
+Se enfoca en la calidad del proceso. y se analizan lo posibles riesgos de esa fase antes de la implementación.</p>
+<img src="../../_static/images/U3_17.png" />
+<p>Este proceso divide la espiral en 4 sectores. Cada cuadrante contiene un tipo de proceso iterativo diferente…</p>
 <p>EL proceso en <strong>Espiral</strong> permite retroalimentación constante por parte del cliente.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Se da la posibilidad de regresar a las etapas anteriores, lo que implica un tiempo de desarrollo más largo e indefinido.</p>
 </div>
-<img src="../../images/U3_18.png" />
+<img src="../../_static/images/U3_18.png" />
 <section id="fases-del-modelo-en-espiral">
 <h3>Fases del modelo en espiral<a class="headerlink" href="#fases-del-modelo-en-espiral" title="Permalink to this heading">#</a></h3>
-<img src="../../images/U3_19.png" />
+<img src="../../_static/images/U3_19.png" />
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 text-center docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
 <div class="sd-col sd-d-flex-row docutils">
@@ -580,19 +589,19 @@ se tiene en cuenta mucho la calidad del proceso. y se analiza antes de la implem
 <h3>✅ Ventajas del modelo en espiral<a class="headerlink" href="#ventajas-del-modelo-en-espiral" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>El análisis del riesgo se hace de forma explícita y clara.</p></li>
-<li><p>Une los mejores elementos de los anteriores modelos.</p></li>
+<li><p>Une los mejores elementos de los anteriores modelos (Cascada &amp; Modelo V).</p></li>
 <li><p>Reduce riesgos del proyecto.</p></li>
 <li><p>Incorpora objetivos de calidad.</p></li>
 </ul>
-<p>Este permite hacer ajustes en el plan de trabajo pero requiere consumo alto de recursos y tiempo, en parte porque los riesgos los debe realizar una persona con mucha experiencia.</p>
+<p>Permite hacer ajustes en el plan de trabajo, pero requiere consumo alto de recursos y tiempo, en parte porque los riesgos los debe realizar una persona con mucha experiencia.</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="el-proceso-unificado">
 <h2>🚀 El proceso unificado<a class="headerlink" href="#el-proceso-unificado" title="Permalink to this heading">#</a></h2>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Fases_y_Flujos_de_trabajo_en_PUR.svg/400px-Fases_y_Flujos_de_trabajo_en_PUR.svg.png" />
-<p>En este se trabaja en fases básicas que tienen unas cuantas iteraciones que se repiten hasta que el producto final se entrega y se considera completa.</p>
-<p>Este proceso NO <strong>se centra</strong> en cada uno de los requerimientos del documento de requerimientos sino en los <strong>diagramas</strong> y la <strong>arquitectura</strong>, lo que permite poder hacer las tareas en paralelo junto con otras. Es efectivo cuando se trabaja con arquitecturas orientada a microservicios.</p>
+<p>En este se trabaja en fases básicas que tienen unas cuantas iteraciones, estas se repiten hasta que el producto final se entrega y se considera completa.</p>
+<p>Este proceso NO <strong>se centra</strong> en cada uno de los requerimientos del documento de requerimientos sino en los <strong>diagramas</strong> y la <strong>arquitectura</strong>, lo que permite hacer las tareas en paralelo junto con otras. Es efectivo cuando se trabaja con arquitecturas orientada a microservicios.</p>
 <p><strong>No</strong> solo es un proceso iterativo sino que también es paralelo.</p>
 <p><strong>Es  muy bueno para proyectos largos</strong></p>
 <section id="etapas-del-proceso-unificado">
@@ -608,10 +617,10 @@ Fase de Inicio<div class="sd-summary-down docutils">
 <p class="sd-card-text">La única fase del proceso unificado en la que no se hace iteración es en la fase de inicio o inception</p>
 <ul class="simple">
 <li><p class="sd-card-text">Se define la arquitectura del sistema.</p></li>
-<li><p class="sd-card-text">Se hace los casos de uso del sistema</p></li>
+<li><p class="sd-card-text">Se elaboran los casos de uso del sistema</p></li>
 </ul>
 <p class="sd-card-text"><strong>Se definen los riesgos y el enfoque del proyecto</strong></p>
-<p class="sd-card-text">En las otras fases si se desarrolla ciclicamente  y se pueden desarrollar todas las demás etapas en paralelo (hasta cierto punto)</p>
+<p class="sd-card-text">Las siguintes fases si se desarrollan ciclicamente y cada etapa se realizan en paralelo (hasta cierto punto). Pero esta etapa <strong>NO</strong></p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -621,13 +630,13 @@ Fase de Elaboración<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <img alt="../../_images/U3_21.png" src="../../_images/U3_21.png" />
-<p class="sd-card-text">Es la primera que se hace cíclicamente, en esta se generan los diseños y diferentes tipos de  prototipos del desarrollo que se estableció en la fase anterior.</p>
+<p class="sd-card-text">Es la primera fase que se hace cíclicamente, en esta se generan los diseños y diferentes tipos de  prototipos del desarrollo que se establecen en la fase anterior.</p>
 <p class="sd-card-text">Se generan:</p>
 <ul class="simple">
 <li><p class="sd-card-text">Diagramas de casos de uso</p></li>
 <li><p class="sd-card-text">Diagramas de clases</p></li>
 </ul>
-<p class="sd-card-text">Para finalizar esta etapa, se entrega un plan para el desarrollo de la fase siguiente.</p>
+<p class="sd-card-text">Para finalizar esta etapa, se entrega un plan para el desarrollo de la siguiente fase.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -639,9 +648,9 @@ Fase de Construcción<div class="sd-summary-down docutils">
 <img alt="../../_images/U3_22.png" src="../../_images/U3_22.png" />
 <p class="sd-card-text"><strong>Es en esta etapa donde el proyecto cobra vida</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text">En esta fase se aplican todo lo que se planea durante la primer etapa   e integra todo lo que se aprende en la etapa de elaboración</p></li>
-<li><p class="sd-card-text">Recordar que acá todo puede ocurrir en paralelo</p></li>
-<li><p class="sd-card-text">Acá empieza la implementación a ocurrir iterativamente.</p></li>
+<li><p class="sd-card-text">En esta fase se aplica todo lo que se planea durante la primer etapa e integra todo lo que se aprende en la etapa de elaboración.</p></li>
+<li><p class="sd-card-text">Recordar que acá todo puede ocurrir en paralelo.</p></li>
+<li><p class="sd-card-text">La implementación ocurre iterativamente.</p></li>
 </ul>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -655,8 +664,8 @@ Fase de Transición<div class="sd-summary-down docutils">
 <p class="sd-card-text"><strong>Ya se encuentra terminada una versión madura para ser publicada con el usuario Final</strong></p>
 <ul class="simple">
 <li><p class="sd-card-text">El producto se encuentra en producción.</p></li>
-<li><p class="sd-card-text">Se empieza a hacer la transición del producto de los desarrolladores al cliente y los usuarios finales del producto mediante algunas pruebas y ajustes de errores.</p></li>
-<li><p class="sd-card-text">una vez se termina esta etapa se puede tomar la decisión de volver a otra etapa si se requieren mayores cambios</p></li>
+<li><p class="sd-card-text">El producto pasa de los desarrolladores al cliente finales mediante algunas iteraciones de pruebas y ajustes de errores.</p></li>
+<li><p class="sd-card-text">una vez se termina esta etapa se puede tomar la decisión de regresar a otra etapa si se requieren mayores cambios.</p></li>
 </ul>
 </div>
 </details></section>
@@ -664,9 +673,9 @@ Fase de Transición<div class="sd-summary-down docutils">
 <section id="creacion-de-prototipos">
 <h2>Creación de prototipos<a class="headerlink" href="#creacion-de-prototipos" title="Permalink to this heading">#</a></h2>
 <img src="https://ux247.com/wp-content/uploads/2018/07/new-benefits-of-prototyping-ip-1024x600.png" />
-<p>Este se aplica a los modelos iterativos, enfocado principalmente en espiral y proceso unificado</p>
-<p>Son importantes porque el cliente interviene en las diferentes etapas y por medio de prototipos puede validar el desarrollo del producto y el cumplimiento de los requerimientos.</p>
-<img src="../../images/U3_24.png" />
+<p>Este se aplica a los modelos iterativos, enfocado principalmente en el de espiral y el de proceso unificado.</p>
+<p>Los prototipos son importantes porque el cliente interviene en la validación de las diferentes etapas del proceso de desarrollo, así como el cumplimiento de los requerimientos.</p>
+<img src="../../_static/images/U3_24.png" />
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 text-center docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
 <div class="sd-col sd-d-flex-row docutils">
@@ -675,7 +684,7 @@ Fase de Transición<div class="sd-summary-down docutils">
 <p class="sd-card-text"><strong>Ilustrativo 📄</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">Es el más básico en el que solo se entregan en un papel algunos bosquejos, o diapositivas. Se aplican para ilustrar una idea de manera rápida y sujeta a muchos cambios, poco fiable pero ahorrando dinero en plasmar la idea de lo que se quiere lograr con el cliente sin gastar de más en tiempo y/o recurso</p>
+<p class="sd-card-text">Es el más básico, solo se entregan dapositivas o bosquejos en un papel. Se aplican para ilustrar una idea de manera rápida y sujeta a muchos cambios. Es poco fiable pero, plasmar la idea de lo que se quiere lograr con el cliente en un prototipo evita gastar más tiempo y/o recursos.</p>
 </div>
 </div>
 </div>
@@ -685,7 +694,7 @@ Fase de Transición<div class="sd-summary-down docutils">
 <p class="sd-card-text"><strong>Exploratorio 🔍</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">En este se requiere un poco más de tiempo, se programa un poco más, se mira no solo como se verá el sistema sino sus interacciones y aspectos a tener en cuenta o posibles dificultades, como una prueba de concepto. Buscar si hay algo ya desarrollado o que me pueda servir.</p>
+<p class="sd-card-text">En este se requiere un poco más de tiempo, se codifica un poco más,no solo se ve como será el sistema sino sus interacciones y posibles dificultades. Es como una prueba de concepto para un producto. Se recomienda buscar si ya hay algo desarrollado o que pueda servir en el proyecto.</p>
 </div>
 </div>
 </div>
@@ -695,7 +704,7 @@ Fase de Transición<div class="sd-summary-down docutils">
 <p class="sd-card-text"><strong>Desechable 🗑️</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">El desechable es en el que se tiene una versión poco funcional, luego se realiza algo más funcional usando la primera y se bota la anterior y así sucesivamente hasta que se logra un prototipo que cumpla con los alcances del proyecto o de la fase.</p>
+<p class="sd-card-text">El prototipo desechable es en el que se tiene una versión poco funcional, luego en la siguiente entrega se presenta algo más funcional usando la primera versión y se eimina la versión anterior y así sucesivamente hasta que se logra un prototipo que cumpla con los alcances finales del proyecto.</p>
 </div>
 </div>
 </div>
@@ -705,7 +714,7 @@ Fase de Transición<div class="sd-summary-down docutils">
 <p class="sd-card-text"><strong>Incremental 🪜</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">En este se realizan por fases las entregas, cada entrega es un producto completamente funcional y se van priorizando en el orden de la imágen. vamos de lo que se debe hacer hasta lo que se puede hacer. Agregar nuevas características a lo largo del tiempo</p>
+<p class="sd-card-text">En este se realizan por fases las entregas, cada entrega es un producto completamente funcional y se van priorizando en el orden que se ve en la imágen. Vamos de lo que se debe hacer (Must Do) hasta lo que se puede hacer(Could Do). El propósito es agregar nuevas características a lo largo del tiempo y de las entregas.</p>
 </div>
 </div>
 </div>
@@ -715,7 +724,7 @@ Fase de Transición<div class="sd-summary-down docutils">
 <p class="sd-card-text"><strong>Evolutivo 🏃🏽‍♂️🦍</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">En este se empieza con todas las características en una forma base, pero todas al tiempo y luego estas van evolucionando conforme pasa el tiempo. va de algo rústico a más elaborado.</p>
+<p class="sd-card-text">En este tipo de prototipos empezamos con todas las características en una forma base (versión funcional) y luego estas caracteristicas van evolucionando al mismo tiempo durante la implementación. En este se va de algo rústico a un producto más elaborado.</p>
 </div>
 </div>
 </div>
@@ -725,10 +734,10 @@ Fase de Transición<div class="sd-summary-down docutils">
 <section id="entrega-continua">
 <h2>♻️ Entrega continua<a class="headerlink" href="#entrega-continua" title="Permalink to this heading">#</a></h2>
 <img src="https://miro.medium.com/v2/resize:fit:612/1*t6AoYmibARPlaJejcrrZEg.png" />
-<p>Es una estrategia para caracterizar la forma en la que se integran las entregas y los avances incrementales que se van presentando sin traumatismos y evitando que existan errores en la integración de los productos o versiones del software</p>
-<p>permite entregar continuamente avances del proyecto y que cada vez que se haga una entrega, se compile, integre, pruebe y se despliegue
-se deben tener varias ramas en el proyecto.</p>
-<img src="../../images/U3_25.png" /></section>
+<p>Permite sistematizar la forma en la que se integran los avances de un producto sin traumatismos, evitando reprocesos y tiempos de depliegue elevados.</p>
+<p>Permite entregar continuamente avances del proyecto y que cada vez que se haga una funcionalidad nueva, se compile, integre, pruebe y se despliegue.</p>
+<p>Se deben tener varias ramas en el proyecto. Normalmente una de <strong>desarrollo</strong>, una de <strong>stage</strong> que es la que se usa para pruebas y una de <strong>producción</strong> (main) que es la que se usa para el producto final.</p>
+<img src="../../_static/images/U3_25.png" /></section>
 </section>
 
     <script type="text/x-thebe-config">

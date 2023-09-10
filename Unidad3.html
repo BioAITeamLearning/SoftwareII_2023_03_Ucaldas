@@ -225,8 +225,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_3/EvaluemosLoAprendido.html">Evaluemos lo aprendido!!</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Unidad4.html">Unidad 4: Ingeniería de requisitos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Unidad5.html">Unidad 5: Requisitos funcionales y NO funcionales</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Unidad4.html">Unidad 4: Ingeniería de requisitos</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_4/Niveles_RF_RNF.html">Niveles de requisitos</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_4/EvaluemosLoAprendido.html">🚀 Vamos a la acción…</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Unidad5.html">Unidad 5: Requisitos funcionales y NO funcionales</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_5/EvaluemosLoAprendido.html">🚀 Vamos a la acción…</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad6.html">Unidad 6: Historias de usuario y casos de uso</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad7.html">Unidad 7: Especificación y formatos para HU y CU</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad8.html">Unidad 8: Mockup’s y UI’s</a></li>
@@ -451,44 +459,44 @@ document.write(`
 <h1>Unidad 3: Modelos de procesos de software<a class="headerlink" href="#unidad-3-modelos-de-procesos-de-software" title="Permalink to this heading">#</a></h1>
 <section id="contenido-de-la-unidad">
 <h2>Contenido de la unidad<a class="headerlink" href="#contenido-de-la-unidad" title="Permalink to this heading">#</a></h2>
-<img src="images/contenidoU3.png"/>
+<img src="_static/images/contenidoU3.png"/>
 </section>
 <hr class="docutils" />
 <section id="procesos-de-software">
 <h2>Procesos de Software<a class="headerlink" href="#procesos-de-software" title="Permalink to this heading">#</a></h2>
 <p>También llamados los ciclos de vida del software, son metodologías para el desarrollo de software de manera sistematizada y en equipo.</p>
 <p><strong>Permiten estructurar y medir el avance de un proyecto</strong></p>
-<img src="images/U3_1.png"/>
-<p>En rasgos generales el proceso de desarrollo de software contempla grandes etapas,</p>
+<img src="_static/images/U3_1.png"/>
+<p>En rasgos generales, el proceso de desarrollo de software contempla 3 grandes etapas.</p>
 <ul class="simple">
 <li><p><strong>Especificación</strong> en la que se toman los requerimientos, se definen los objetivos del proyecto, las fases y el plan de trabajo</p></li>
-<li><p><strong>Diseño e implementación</strong> es la etapa de codificar las funciones, módulos, versiones del software (es la etapa de programar)</p></li>
-<li><p><strong>Verificación y validación</strong> es la etapa de retroalimentación por parte de los tester, de los usuarios para validar lo que se implementa.</p></li>
+<li><p><strong>Diseño e implementación</strong> es la etapa en la que se codifican las funciones, módulos, versiones del software (es la etapa de programar).</p></li>
+<li><p><strong>Verificación y validación</strong> es la etapa de retroalimentación por parte de los tester y de los usuarios para validar lo que se implementa.</p></li>
 </ul>
 <hr class="docutils" />
 <section id="conceptos-a-conocer-de-un-proceso-de-software">
 <h3>Conceptos a conocer de un proceso de software<a class="headerlink" href="#conceptos-a-conocer-de-un-proceso-de-software" title="Permalink to this heading">#</a></h3>
-<img src="images/U3_2.png"/>
+<img src="_static/images/U3_2.png"/>
 <p>En cada proceso se maneja la misma convención.</p>
 <p>Para los proyectos:</p>
 <ul class="simple">
-<li><p>Todo se organiza por <strong>fases</strong> (objetivo general), que son etapas específicas acumulativas.</p></li>
-<li><p>Cada fase cuenta con <strong>actividades</strong> (objetivos específicos) generales que describen los objetivos que se desean cumplir en esa fase.</p></li>
-<li><p>Cada actividad cuenta con <strong>tareas</strong>, unidades muy específicas a realizar que no toman más de un día en realizarse. son la unidad más granular del proceso de software.</p></li>
+<li><p>Todo se organiza por <strong>fases</strong> (objetivo general): Son etapas específicas acumulativas.</p></li>
+<li><p>Cada fase cuenta con <strong>actividades</strong> (objetivos específicos): Describen los objetivos que se desean cumplir en esa fase.</p></li>
+<li><p>Cada actividad cuenta con <strong>tareas</strong>: Unidades granulares del proceso de software, no toman más de un día en realizarse.</p></li>
 </ul>
 <section id="ejemplo-para-una-tarea-especifica">
 <h4>Ejemplo para una tarea específica<a class="headerlink" href="#ejemplo-para-una-tarea-especifica" title="Permalink to this heading">#</a></h4>
-<img src="images/U3_3.png"/>
+<img src="_static/images/U3_3.png"/>
 <p>Este es un ejemplo en el que se ve como es la estructura para una tarea específica</p>
 <ol class="arabic simple">
-<li><p>una actividad contiene tareas</p></li>
-<li><p>un Rol determinado desarrolla esa tarea</p></li>
-<li><p>una tarea consume recursos -&gt; (tiempo, dinero, tecnología)</p></li>
+<li><p>Una actividad contiene tareas.</p></li>
+<li><p>Un Rol determinado desarrolla esa tarea.</p></li>
+<li><p>Una tarea consume recursos -&gt; (tiempo, dinero, tecnología).</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Una <strong>TAREA</strong> usa productos, los productos son documentos o resultados de las fases iniciales, puede ser un documento de requerimientos, el diseño de una arquitectura,etc.</p>
-<p>y a su vez la <strong>TAREA</strong> genera nuevos productos: una funcionalidad, un documento de reporte de pruebas, etc</p>
+<p>Una <strong>TAREA</strong> utiliza productos, los productos son documentos o resultados de las fases iniciales, Un documento puede ser: requerimientos, el diseño de una arquitectura,etc.</p>
+<p>A su vez, la <strong>TAREA</strong> genera nuevos productos: una funcionalidad, un documento de reporte de pruebas, etc.</p>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -499,11 +507,11 @@ document.write(`
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><img alt="tarea" src="_images/U3_4.png" /></p>
 <ul class="simple">
-<li><p class="sd-card-text">Escribir una pieza de código de software</p></li>
-<li><p class="sd-card-text">Diseñar una característica</p></li>
-<li><p class="sd-card-text">Escribir documentación</p></li>
-<li><p class="sd-card-text">Instalación de una librería</p></li>
-<li><p class="sd-card-text">Probar una función</p></li>
+<li><p class="sd-card-text">Escribir una pieza de código de software.</p></li>
+<li><p class="sd-card-text">Diseñar una característica.</p></li>
+<li><p class="sd-card-text">Escribir documentación.</p></li>
+<li><p class="sd-card-text">Instalación de una librería.</p></li>
+<li><p class="sd-card-text">Probar una función.</p></li>
 </ul>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -518,13 +526,13 @@ Roles dentro de un equipo de desarrollo de software<div class="sd-summary-down d
 <li><p class="sd-card-text">Programador (También se le llama desarrollador)</p></li>
 <li><p class="sd-card-text">Tester (Se le denomina QA, Quality Assurance)</p></li>
 <li><p class="sd-card-text">CEO (Gerente de la compañía, Chief Executive Officer)</p></li>
+<li><p class="sd-card-text">CTO (Gerente técnico, Chief Technical Officer)</p></li>
 <li><p class="sd-card-text">Cliente (Cliente final - no confundir con el usuario final -)</p></li>
 <li><p class="sd-card-text">Gerente de proyecto ( Conocido como project manager)</p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p class="sd-card-text">Se debe mencionar que, aunque estos son diferentes a los roles del desarrollo en equipo, para la metodología TSP se definen otros nombres de roles.
-Estos son solo un ejemplo de los roles que están involucrados, no son los únicos y no son el único nombre que pueden tener.</p>
+<p class="sd-card-text">Aunque estos roles tienen nombres diferentes a los que se definieron en la metodología TSP, son ejmplos de los roles que se involucran en el desarrollo de software en empresas. Las responsabilidades y roles de estos son similares a la que se definen en la metodología TSP.</p>
 </div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">

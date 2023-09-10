@@ -5,14 +5,14 @@ title: Unidad 1
 
 ## Contenido de la unidad
 
-<img src="images/contenidoU1.png"/>
+<img src="_static/images/contenidoU1.png"/>
 
 
 ## Proceso de desarrollo de software en equipo
 
 ### Aspectos generales del desarrollo de software
 
-<img src="images/Aspect_grl_sfw.png">
+<img src="_static/images/Aspect_grl_sfw.png">
 
 ---
 
@@ -27,7 +27,7 @@ title: Unidad 1
 :class-header: bg-light text-center
 Administración del proyecto
 ^^^
-```{image} images/admin_proyect.png
+```{image} _static/images/admin_proyect.png
 :height: 100
 :class: rounded
 ```
@@ -41,7 +41,7 @@ Administración del proyecto
 :class-header: bg-light text-center
 Buenas prácticas
 ^^^
-```{image} images/buenas_practicas.png
+```{image} _static/images/buenas_practicas.png
 :height: 100
 :class: rounded
 ```
@@ -52,7 +52,7 @@ Buenas prácticas
 :class-header: bg-light text-center
 Implementación de software
 ^^^
-```{image} images/implementacion_sfw.png
+```{image} _static/images/implementacion_sfw.png
 :height: 100
 :class: rounded
 ```
@@ -95,7 +95,7 @@ Implementación de software
 
 ### El desarrollo de software en la actualidad
 
-<img src="images/monolitoVsServicios.png"/>
+<img src="_static/images/monolitoVsServicios.png"/>
 
 
 ```{tip}
@@ -136,4 +136,4 @@ Implementación de software
 
 ### Equipos tradicionales Vs Equipos autodirigidos
 
-<img src="images/tradicionalesVsAutodirigidos.png" />
+<img src="_static/images/tradicionalesVsAutodirigidos.png" />
