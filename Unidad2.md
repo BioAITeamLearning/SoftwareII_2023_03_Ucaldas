@@ -5,7 +5,7 @@ title: Unidad 2
 
 ## Contenido de la unidad
 
-<img src="images/contenidoU2.png"/>
+<img src="_static/images/contenidoU2.png"/>
 
 ## Jira para gestión del equipo
 

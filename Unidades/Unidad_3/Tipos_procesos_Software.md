@@ -16,26 +16,26 @@ Algunos de los tipos de procesos de software son:
 * Creación de prototipos
 * Entrega continua
 
-Cada uno de estos sirve dependiendo del tipo de producto o desarrollo que queramos realizar, las necesidades, tiempos y stakeholders con los que se cuente.
+Cada uno de estos se implementa dependiendo de: el tipo de desarrollo que realicemos, las necesidades, tiempos y stakeholders con los que se cuente.
 
 ---
 
 ### 🛣️ Modelos lineales
 
-**En este modelo la siguiente fases no puede empezar sin que termine la fase anterior.**
+**En este modelo la fase siguiente no puede empezar sin que termine la fase anterior.**
 
-No hay retroalimentación continua por parte del cliente final, no está involucrado **completamente** en todo el desarrollo.
+El cliente final no está involucrado **Completamente** en el proceso de software (No hay retroalimentación).
 
-Consume muchos recursos cuando **NO** se hace una buena planeación.
+Estos procesos pueden consumir muchos recursos cuando **NO** se planea adecuadamente.
 
 Dentro de los modelos lineales tenemos:
 
 ::::{dropdown} Cascada (Waterfall)
 
-```{image} ../../images/U3_14.png
+```{image} ../../_static/images/U3_14.png
 ```
 
-* Solo se involucra el cliente en el arranque del proyecto y en la última etapa de verificación (cuando el sistema está completamente desplegado).
+* Solo se involucra al cliente en dos momentos: En el arranque del proyecto y en la última etapa de verificación (cuando el sistema está completamente desplegado).
 
 * **No permite ejecutar fases en paralelo.**
 
@@ -44,19 +44,18 @@ Dentro de los modelos lineales tenemos:
 
 ::::{dropdown} V-Model
 
-```{image} ../../images/U3_15.png
+```{image} ../../_static/images/U3_15.png
 ```
 
-* Es una mejora al de cascada.
-* Se tiene en cuenta un proceso más riguroso de calidad, de acuerdo a los documentos y fases iniciales del proyecto (requerimientos, diseños)
-* El cliente solo ve el desarrollo hasta la última etapa.
-* En este el cliente se involucra al cliente al principio y al final, y se debe tener una buena cantidad de información inicial y un buen proceso de requerimientos para entender la idea del cliente.
-
+* Es una mejora al modelo de cascada.
+* Tiene un proceso más riguroso de calidad, basado en los documentos y fases iniciales del proyecto (requerimientos, diseños)
+* El cliente solo ve el resultado final del desarrollo en la última etapa.
+* Se debe tener una gran cantidad de información inicial y un buen proceso de requerimientos para entender la idea del cliente. ya que, el cliente valida y retroalimenta el proceso hasta el final del proyecto.
 ::::
 
 ::::{dropdown} Modelo Diente de sierra
 
-```{image} ../../images/U3_16.png
+```{image} ../../_static/images/U3_16.png
 ```
 
 * Involucra de forma más activa al cliente en el desarrollo del proyecto.
@@ -68,12 +67,12 @@ Dentro de los modelos lineales tenemos:
 
 ### 🌀 Modelos en espiral
 
-Es un proceso iterativo, que realiza las fases por etapas de **4** pasos
-se tiene en cuenta mucho la calidad del proceso. y se analiza antes de la implementación los posibles riesgos de esa fase.
+Es un proceso iterativo, que realiza cada fase por etapas de **4** pasos.
+Se enfoca en la calidad del proceso. y se analizan lo posibles riesgos de esa fase antes de la implementación.
 
-<img src="../../images/U3_17.png" />
+<img src="../../_static/images/U3_17.png" />
 
-Este proceso divide la espiral en 4 sectores. Cada cuadrante contiene un tipo de proceso iterativo diferente
+Este proceso divide la espiral en 4 sectores. Cada cuadrante contiene un tipo de proceso iterativo diferente...
 
 EL proceso en **Espiral** permite retroalimentación constante por parte del cliente.
 
@@ -81,11 +80,11 @@ EL proceso en **Espiral** permite retroalimentación constante por parte del cli
  Se da la posibilidad de regresar a las etapas anteriores, lo que implica un tiempo de desarrollo más largo e indefinido.
 ```
 
-<img src="../../images/U3_18.png" />
+<img src="../../_static/images/U3_18.png" />
 
 #### Fases del modelo en espiral
 
-<img src="../../images/U3_19.png" />
+<img src="../../_static/images/U3_19.png" />
 
 ::::{grid} 1 1 2 2
 :class-container: text-center
@@ -140,12 +139,12 @@ Planear la próxima iteración
 #### ✅ Ventajas del modelo en espiral
 
 * El análisis del riesgo se hace de forma explícita y clara.
-* Une los mejores elementos de los anteriores modelos.
+* Une los mejores elementos de los anteriores modelos (Cascada & Modelo V).
 * Reduce riesgos del proyecto.
 * Incorpora objetivos de calidad.
 
 
-Este permite hacer ajustes en el plan de trabajo pero requiere consumo alto de recursos y tiempo, en parte porque los riesgos los debe realizar una persona con mucha experiencia.
+Permite hacer ajustes en el plan de trabajo, pero requiere consumo alto de recursos y tiempo, en parte porque los riesgos los debe realizar una persona con mucha experiencia.
 
 ---
 
@@ -154,9 +153,9 @@ Este permite hacer ajustes en el plan de trabajo pero requiere consumo alto de r
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Fases_y_Flujos_de_trabajo_en_PUR.svg/400px-Fases_y_Flujos_de_trabajo_en_PUR.svg.png" />
 
-En este se trabaja en fases básicas que tienen unas cuantas iteraciones que se repiten hasta que el producto final se entrega y se considera completa.
+En este se trabaja en fases básicas que tienen unas cuantas iteraciones, estas se repiten hasta que el producto final se entrega y se considera completa.
 
-Este proceso NO **se centra** en cada uno de los requerimientos del documento de requerimientos sino en los **diagramas** y la **arquitectura**, lo que permite poder hacer las tareas en paralelo junto con otras. Es efectivo cuando se trabaja con arquitecturas orientada a microservicios.
+Este proceso NO **se centra** en cada uno de los requerimientos del documento de requerimientos sino en los **diagramas** y la **arquitectura**, lo que permite hacer las tareas en paralelo junto con otras. Es efectivo cuando se trabaja con arquitecturas orientada a microservicios.
 
 **No** solo es un proceso iterativo sino que también es paralelo.
 
@@ -169,62 +168,62 @@ Este proceso NO **se centra** en cada uno de los requerimientos del documento de
 
 ::::{dropdown} Fase de Inicio
 
-```{image} ../../images/U3_20.png
+```{image} ../../_static/images/U3_20.png
 ```
 
 La única fase del proceso unificado en la que no se hace iteración es en la fase de inicio o inception
 
 * Se define la arquitectura del sistema.
-* Se hace los casos de uso del sistema
+* Se elaboran los casos de uso del sistema
   
 **Se definen los riesgos y el enfoque del proyecto**
 
-En las otras fases si se desarrolla ciclicamente  y se pueden desarrollar todas las demás etapas en paralelo (hasta cierto punto)
+Las siguintes fases si se desarrollan ciclicamente y cada etapa se realizan en paralelo (hasta cierto punto). Pero esta etapa **NO**
 
 ::::
 
 ::::{dropdown} Fase de Elaboración
 
-```{image} ../../images/U3_21.png
+```{image} ../../_static/images/U3_21.png
 ```
 
-Es la primera que se hace cíclicamente, en esta se generan los diseños y diferentes tipos de  prototipos del desarrollo que se estableció en la fase anterior.
+Es la primera fase que se hace cíclicamente, en esta se generan los diseños y diferentes tipos de  prototipos del desarrollo que se establecen en la fase anterior.
 
 Se generan: 
 
 * Diagramas de casos de uso
 * Diagramas de clases
   
-Para finalizar esta etapa, se entrega un plan para el desarrollo de la fase siguiente.
+Para finalizar esta etapa, se entrega un plan para el desarrollo de la siguiente fase.
 
 ::::
 
 
 ::::{dropdown} Fase de Construcción
 
-```{image} ../../images/U3_22.png
+```{image} ../../_static/images/U3_22.png
 ```
 
 **Es en esta etapa donde el proyecto cobra vida**
 
-- En esta fase se aplican todo lo que se planea durante la primer etapa   e integra todo lo que se aprende en la etapa de elaboración 
+- En esta fase se aplica todo lo que se planea durante la primer etapa e integra todo lo que se aprende en la etapa de elaboración.
 
-- Recordar que acá todo puede ocurrir en paralelo
+- Recordar que acá todo puede ocurrir en paralelo.
 
-- Acá empieza la implementación a ocurrir iterativamente.
+- La implementación ocurre iterativamente.
 
 ::::
 
 ::::{dropdown} Fase de Transición
 
-```{image} ../../images/U3_23.png
+```{image} ../../_static/images/U3_23.png
 ```
 
 **Ya se encuentra terminada una versión madura para ser publicada con el usuario Final**
 
 - El producto se encuentra en producción.
-- Se empieza a hacer la transición del producto de los desarrolladores al cliente y los usuarios finales del producto mediante algunas pruebas y ajustes de errores.
-- una vez se termina esta etapa se puede tomar la decisión de volver a otra etapa si se requieren mayores cambios
+- El producto pasa de los desarrolladores al cliente finales mediante algunas iteraciones de pruebas y ajustes de errores.
+- una vez se termina esta etapa se puede tomar la decisión de regresar a otra etapa si se requieren mayores cambios.
 
 ::::
 
@@ -232,11 +231,11 @@ Para finalizar esta etapa, se entrega un plan para el desarrollo de la fase sigu
 
 <img src="https://ux247.com/wp-content/uploads/2018/07/new-benefits-of-prototyping-ip-1024x600.png" />
 
-Este se aplica a los modelos iterativos, enfocado principalmente en espiral y proceso unificado
+Este se aplica a los modelos iterativos, enfocado principalmente en el de espiral y el de proceso unificado.
 
-Son importantes porque el cliente interviene en las diferentes etapas y por medio de prototipos puede validar el desarrollo del producto y el cumplimiento de los requerimientos.
+Los prototipos son importantes porque el cliente interviene en la validación de las diferentes etapas del proceso de desarrollo, así como el cumplimiento de los requerimientos.
 
-<img src="../../images/U3_24.png" />
+<img src="../../_static/images/U3_24.png" />
 
 
 ::::{grid} 1 1 2 3
@@ -249,7 +248,7 @@ Son importantes porque el cliente interviene en las diferentes etapas y por medi
 **Ilustrativo 📄**
 ^^^
 
-Es el más básico en el que solo se entregan en un papel algunos bosquejos, o diapositivas. Se aplican para ilustrar una idea de manera rápida y sujeta a muchos cambios, poco fiable pero ahorrando dinero en plasmar la idea de lo que se quiere lograr con el cliente sin gastar de más en tiempo y/o recurso
+Es el más básico, solo se entregan dapositivas o bosquejos en un papel. Se aplican para ilustrar una idea de manera rápida y sujeta a muchos cambios. Es poco fiable pero, plasmar la idea de lo que se quiere lograr con el cliente en un prototipo evita gastar más tiempo y/o recursos.
 :::
 
 :::{grid-item-card}
@@ -258,7 +257,7 @@ Es el más básico en el que solo se entregan en un papel algunos bosquejos, o d
 **Exploratorio 🔍**
 ^^^
 
-En este se requiere un poco más de tiempo, se programa un poco más, se mira no solo como se verá el sistema sino sus interacciones y aspectos a tener en cuenta o posibles dificultades, como una prueba de concepto. Buscar si hay algo ya desarrollado o que me pueda servir.
+En este se requiere un poco más de tiempo, se codifica un poco más,no solo se ve como será el sistema sino sus interacciones y posibles dificultades. Es como una prueba de concepto para un producto. Se recomienda buscar si ya hay algo desarrollado o que pueda servir en el proyecto.
 
 :::
 :::{grid-item-card}
@@ -267,7 +266,7 @@ En este se requiere un poco más de tiempo, se programa un poco más, se mira no
 **Desechable 🗑️**
 ^^^
 
-El desechable es en el que se tiene una versión poco funcional, luego se realiza algo más funcional usando la primera y se bota la anterior y así sucesivamente hasta que se logra un prototipo que cumpla con los alcances del proyecto o de la fase.
+El prototipo desechable es en el que se tiene una versión poco funcional, luego en la siguiente entrega se presenta algo más funcional usando la primera versión y se eimina la versión anterior y así sucesivamente hasta que se logra un prototipo que cumpla con los alcances finales del proyecto.
 :::
 
 :::{grid-item-card}
@@ -276,7 +275,7 @@ El desechable es en el que se tiene una versión poco funcional, luego se realiz
 **Incremental 🪜**
 ^^^
 
-En este se realizan por fases las entregas, cada entrega es un producto completamente funcional y se van priorizando en el orden de la imágen. vamos de lo que se debe hacer hasta lo que se puede hacer. Agregar nuevas características a lo largo del tiempo
+En este se realizan por fases las entregas, cada entrega es un producto completamente funcional y se van priorizando en el orden que se ve en la imágen. Vamos de lo que se debe hacer (Must Do) hasta lo que se puede hacer(Could Do). El propósito es agregar nuevas características a lo largo del tiempo y de las entregas.
 
 :::
 
@@ -286,7 +285,7 @@ En este se realizan por fases las entregas, cada entrega es un producto completa
 **Evolutivo 🏃🏽‍♂️🦍**
 ^^^
 
-En este se empieza con todas las características en una forma base, pero todas al tiempo y luego estas van evolucionando conforme pasa el tiempo. va de algo rústico a más elaborado.
+En este tipo de prototipos empezamos con todas las características en una forma base (versión funcional) y luego estas caracteristicas van evolucionando al mismo tiempo durante la implementación. En este se va de algo rústico a un producto más elaborado.
 
 :::
 
@@ -297,9 +296,10 @@ En este se empieza con todas las características en una forma base, pero todas 
 
 <img src="https://miro.medium.com/v2/resize:fit:612/1*t6AoYmibARPlaJejcrrZEg.png" />
 
-Es una estrategia para caracterizar la forma en la que se integran las entregas y los avances incrementales que se van presentando sin traumatismos y evitando que existan errores en la integración de los productos o versiones del software
+Permite sistematizar la forma en la que se integran los avances de un producto sin traumatismos, evitando reprocesos y tiempos de depliegue elevados.
 
-permite entregar continuamente avances del proyecto y que cada vez que se haga una entrega, se compile, integre, pruebe y se despliegue
-se deben tener varias ramas en el proyecto.
+Permite entregar continuamente avances del proyecto y que cada vez que se haga una funcionalidad nueva, se compile, integre, pruebe y se despliegue.
 
-<img src="../../images/U3_25.png" />
+Se deben tener varias ramas en el proyecto. Normalmente una de **desarrollo**, una de **stage** que es la que se usa para pruebas y una de **producción** (main) que es la que se usa para el producto final.
+
+<img src="../../_static/images/U3_25.png" />
