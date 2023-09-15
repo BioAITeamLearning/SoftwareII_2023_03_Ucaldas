@@ -67,7 +67,7 @@ Dentro de los modelos lineales tenemos:
 
 ### 🌀 Modelos en espiral
 
-Es un proceso iterativo, que realiza cada fase por etapas de **4** pasos.
+Es un proceso iterativo, que realiza cada etapa por fases de **4** pasos.
 Se enfoca en la calidad del proceso. y se analizan lo posibles riesgos de esa fase antes de la implementación.
 
 <img src="../../_static/images/U3_17.png" />
