@@ -47,5 +47,3 @@ Determine si es un requisito o no:
 * El sistema deberá mostrar los resultados de cada consulta en menos de 3 segundos.
 
 ```
-
----
