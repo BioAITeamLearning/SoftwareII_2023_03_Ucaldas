@@ -119,7 +119,7 @@ Los **requisitos** son las **descripciones** de las necesidades y las restriccio
 
 * Ambiguo: Un requisito no puede ser interpretado de más de una manera. Así se evitan inconvenientes a futuro con el cliente.
 
-* Priorizar: Los requisitos deben poder ordenarse de manera que puedan ordenarse y priorizarse.
+* Priorizar: Los requisitos deben poder ordenarse de manera que puedan priorizarse.
 
 * **Evitar el uso de juicios de valor en la elaboración de los mismos.**
 
