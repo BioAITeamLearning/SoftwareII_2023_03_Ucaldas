@@ -10,7 +10,7 @@ title: Unidad 5
 
 ### Requisitos funcionales
 
-Los requisitos funcionales son **declaraciones** detalladas  de las **funcionalidades** deseadas para el sistema de  software.
+Los requisitos funcionales son **declaraciones** detalladas  de las **funcionalidades** deseadas para el sistema de  software. Estos son elaborados a partir del proceso de elicitación de requisitos que se realiza con el cliente.
 
 
 <img src="_static/images/U4_22.png"/>
@@ -29,13 +29,15 @@ Los requisitos no funcionales son **declaraciones** acerca de  la **calidad** de
 
 <img src="_static/images/U4_24.png"/>
 
-Responde a la pregunta: ¿Cómo debe hacer el sistema lo que hace?
+Responde a la pregunta: ¿Cómo debe hacer el sistema lo que hace?. 
+
+Este a diferencia de lo que se vió en la sección de requisitos, si responden al cómo debe trabajar el sistema, toda vez que estos requerimientos son planteados por el equipo de desarrollo y **NO por el cliente**.
 
 ---
 
 ## ¿Cómo se escriben los requermientos?
 
-**El sistema permitirá <Verbo> <Objeto>** 
+### "El sistema permitirá [Verbo] [Objeto]"
 
 ### Veamos un ejemplo con la aplicación Duolingo:
 
