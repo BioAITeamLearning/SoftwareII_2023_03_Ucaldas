@@ -29,11 +29,14 @@ title: Niveles de requisitos y requisitos funcionales y No funcionales
 
 ## Lo que NO es un requisito
 
-* Detalles de diseño o de implementación (el “cómo”).
-* Información sobre pruebas.
+* Detalles de diseño o de implementación (el “cómo”): Los requisitos deben centrarse en describir qué debe hacer el sistema y no en cómo se debe construir o implementar. Los detalles de diseño suelen ser responsabilidad de los equipos de desarrollo y se definen en etapas posteriores al establecimiento de los requisitos.
+* Información sobre pruebas: Si bien es importante que los requisitos sean verificables, la información detallada sobre cómo se llevarán a cabo las pruebas no forma parte de los requisitos. Los casos de prueba y los escenarios de prueba se desarrollan después de establecer los requisitos.
+  
 * Información sobre planeación.
-  * Presupuesto .
-  * Tiempos del proyecto.
+  * Presupuesto: Los requisitos no deben incluir información sobre el presupuesto del proyecto. La asignación de recursos financieros es una consideración de gestión de proyectos y no un requisito.
+  * Tiempos del proyecto: Los plazos y la planificación del proyecto son responsabilidad de la gestión de proyectos y no deben confundirse con los requisitos.
+
+**los requisitos se centran en lo que se necesita lograr, no en cómo se logrará ni en detalles de planificación, presupuesto o pruebas. Estos son aspectos que se manejan en fases posteriores del ciclo de desarrollo del software.**
 
 ---
 
