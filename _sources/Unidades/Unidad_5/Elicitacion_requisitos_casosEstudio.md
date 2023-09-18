@@ -5,24 +5,25 @@ title: Elicitación de requerimientos y casos de estudio
 # Elicitación de requerimientos
 
 
-La elicitación de requerimientos es el proceso de identificar, recopilar, documentar y validar los requisitos de un sistema, producto o proyecto. Estos requisitos son las características, funciones y restricciones que deben cumplirse para satisfacer las necesidades y expectativas de los stakeholders (partes interesadas). Aquí se describen los pasos clave para llevar a cabo este proceso:
+La elicitación de requerimientos es el proceso de identificar, recopilar, documentar y validar los requerimientos de un sistema, producto o proyecto. Estos requerimientos son las características, funciones y restricciones que deben cumplirse para satisfacer las necesidades y expectativas de los stakeholders (partes interesadas). Aquí se describen los pasos clave para llevar a cabo este proceso:
 
 
 1. **Identificar stakeholders:** Identificar a las personas que tienen un interés en el sistema, producto o proyecto. Estas personas pueden ser usuarios, clientes, patrocinadores, gerentes, desarrolladores, etc. Es importante identificar a todos los stakeholders, ya que cada uno puede tener diferentes necesidades y expectativas.
 
 2. **Entender el contexto:** Comprender el contexto del sistema, producto o proyecto. Esto incluye comprender el negocio, el entorno operativo, los objetivos, las restricciones, las oportunidades y los problemas.
    
-3. **Planificar la elicitación:** Planificar la elicitación de requisitos. Esto incluye definir el alcance, los objetivos, los métodos, los recursos y el cronograma de la elicitación.
+3. **Planificar la elicitación:** Planificar la elicitación de requerimientos. Esto incluye definir el alcance, los objetivos, los métodos, los recursos y el cronograma de la elicitación.
 
-4. **Elegir técnicas:** Elegir las técnicas de elicitación de requisitos que se utilizarán. Las técnicas de elicitación incluyen entrevistas, cuestionarios, talleres, observación, prototipos, casos de uso, historias de usuario, etc.
+4. **Elegir técnicas:** Elegir las técnicas de elicitación de requerimientos que se utilizarán. Las técnicas de elicitación incluyen entrevistas, cuestionarios, talleres, observación, prototipos, casos de uso, historias de usuario, etc.
     * **Realización de Entrevistas:** Las entrevistas son una técnica clave. Conversa con los stakeholders para comprender sus necesidades, expectativas y deseos. Prepara preguntas abiertas y cerradas para obtener información detallada.
     * **Encuestas y cuestionarios:** Las encuestas son una técnica útil para recopilar información de un gran número de stakeholders. Las encuestas pueden ser en línea o en papel. Las preguntas pueden ser abiertas o cerradas.
-    * **Taller de requerimientos**: Los talleres son reuniones colaborativas donde los stakeholders trabajan juntos para definir y priorizar los requisitos. Pueden ser especialmente útiles para resolver conflictos y alinear expectativas.
+    * **Taller de requerimientos**: Los talleres son reuniones colaborativas donde los stakeholders trabajan juntos para definir y priorizar los requerimientos. Pueden ser especialmente útiles para resolver conflictos y alinear expectativas.
     * **Observación:** Observa a los usuarios mientras realizan sus tareas. Esto puede ayudarte a comprender mejor sus necesidades y expectativas. También puede ayudarte a identificar problemas y oportunidades.
-    * **Prototipado:** La creación de prototipos o maquetas del sistema puede ayudar a los stakeholders a visualizar mejor cómo será el producto final y aclarar los requisitos.
-    * **Documentación de Requerimientos:** Registra los requisitos de manera clara y precisa. Utiliza formatos adecuados, como especificaciones funcionales.
-5. **Validación de Requisitos:** Verifica que los requisitos recopilados sean consistentes, completos, relevantes y alcanzables. Esto implica una revisión exhaustiva con los stakeholders y posiblemente la realización de pruebas de validación.
-6. **Gestión de Cambios:** Establece un proceso para gestionar cambios en los requisitos a lo largo del proyecto. Los cambios deben ser documentados, evaluados y aprobados por las partes interesadas.
+    * **Prototipado:** La creación de prototipos o maquetas del sistema puede ayudar a los stakeholders a visualizar mejor cómo será el producto final y aclarar los requerimientos.
+    * **Documentación de Requerimientos:** Registra los requerimientos de manera clara y precisa. Utiliza formatos adecuados, como especificaciones funcionales.
+  
+5. **Validación de requerimientos:** Verifica que los requerimientos recopilados sean consistentes, completos, relevantes y alcanzables. Esto implica una revisión exhaustiva con los stakeholders y posiblemente la realización de pruebas de validación.
+6. **Gestión de Cambios:** Establece un proceso para gestionar cambios en los requerimientos a lo largo del proyecto. Los cambios deben ser documentados, evaluados y aprobados por las partes interesadas.
 
 `````{admonition} Vamos a realizar una elicitación de requerimientos!
 :class: tip, dropdown
@@ -114,3 +115,7 @@ A lo largo de este proceso de elicación, exploraremos los desafíos y oportunid
 
 ````
 `````
+
+:::{note}
+Debes realizar una página web estática con el contenido de la elicitación de requerimientos, esta debe ser entregada en un repositorio de github y debe estar publicada en github pages.
+:::
