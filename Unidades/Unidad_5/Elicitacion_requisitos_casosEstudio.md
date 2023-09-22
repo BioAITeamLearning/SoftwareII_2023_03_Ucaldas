@@ -116,6 +116,6 @@ A lo largo de este proceso de elicación, exploraremos los desafíos y oportunid
 ````
 `````
 
-:::{note}
+```:::```{note}
 Debes realizar una página web estática con el contenido de la elicitación de requerimientos, esta debe ser entregada en un repositorio de github y debe estar publicada en github pages.
 :::
