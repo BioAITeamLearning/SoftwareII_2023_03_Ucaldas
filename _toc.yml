@@ -37,6 +37,7 @@ chapters:
 - file: Unidad6
   sections:
     - file: "Unidades/Unidad_6/casosUso"
+    - file: "Unidades/Unidad_6/EvaluamosLoAprendido"
 
 - file: Unidad7
 - file: Unidad8
