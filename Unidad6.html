@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Unidad6';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Unidad 7: Especificación y formatos para HU y CU" href="Unidad7.html" />
+    <link rel="next" title="Casos de uso" href="Unidades/Unidad_6/casosUso.html" />
     <link rel="prev" title="Backend FastAPI" href="Unidades/Unidad_5/SesionInicial_BackendFastAPI_v1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -237,7 +237,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_5/SesionInicial_BackendFastAPI_v1.html">Backend FastAPI</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unidad 6: Historias de usuario y casos de uso</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Unidad 6: Historias de usuario y casos de uso</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_6/casosUso.html">Casos de uso</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad7.html">Unidad 7: Especificación y formatos para HU y CU</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad8.html">Unidad 8: Mockup’s y UI’s</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad9.html">Unidad 9: Herramientas para desarrollo y gestión de proyectos de software</a></li>
@@ -439,7 +442,22 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-una-historia-de-usuario">Qué es una historia de usuario?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estrutura-de-una-historia-de-usuario">Estrutura de una historia de usuario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-una-historia-de-usuario">Ejemplo de una historia de usuario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-no-es-una-historia-de-usuario">¿Qué NO es una historia de usuario?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-para-levantar-historias-de-usuario-y-requerimientos">Formato para levantar historias de usuario y requerimientos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-historias-de-usuario">Formato de historias de usuario</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-requerimientos-funcionales-y-no-funcionales">Formato de requerimientos funcionales y NO funcionales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Formato de historias de usuario</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -457,9 +475,140 @@ document.write(`
 <h2>Contenido de la unidad<a class="headerlink" href="#contenido-de-la-unidad" title="Permalink to this heading">#</a></h2>
 <img src="_static/images/contenidoU6.png"/>
 </section>
-<section id="espere-aca-el-contenido-de-las-siguientes-versiones">
-<h2>Espere acá el contenido de las siguientes versiones<a class="headerlink" href="#espere-aca-el-contenido-de-las-siguientes-versiones" title="Permalink to this heading">#</a></h2>
+<section id="que-es-una-historia-de-usuario">
+<h2>Qué es una historia de usuario?<a class="headerlink" href="#que-es-una-historia-de-usuario" title="Permalink to this heading">#</a></h2>
+<p>Es una explicación escrita en lenguaje poco técnico sobre una función de software desde el punto de vista del usuario final. Las historias de usuario son utilizadas en la metodología ágil de desarrollo de software como parte de la fase de análisis de requisitos.</p>
+<img src="_static/images/U6_1.png"/>
+<p>Tienen como propósito definir cómo una función del software agrega valor al cliente.</p>
 </section>
+<hr class="docutils" />
+<section id="estrutura-de-una-historia-de-usuario">
+<h2>Estrutura de una historia de usuario<a class="headerlink" href="#estrutura-de-una-historia-de-usuario" title="Permalink to this heading">#</a></h2>
+<p>Este documento es la unidad principal para metodologías ágiles de desarrollo. Es una descripción corta y simple de una característica contada desde la perspectiva del usuario final. Una historia de usuario describe una característica, que es algo que el usuario quiere hacer con el sistema.</p>
+<img src="_static/images/U6_2.png"/>
+</section>
+<hr class="docutils" />
+<section id="ejemplo-de-una-historia-de-usuario">
+<h2>Ejemplo de una historia de usuario<a class="headerlink" href="#ejemplo-de-una-historia-de-usuario" title="Permalink to this heading">#</a></h2>
+<img src="_static/images/U6_3.png"/>
+</section>
+<hr class="docutils" />
+<section id="que-no-es-una-historia-de-usuario">
+<h2>¿Qué NO es una historia de usuario?<a class="headerlink" href="#que-no-es-una-historia-de-usuario" title="Permalink to this heading">#</a></h2>
+<img src="_static/images/U6_4.png"/>
+<p>Estos ejemplos NO son historias de usuario, porque no se enfocan en las necesidades del usuario ni en los objetivos específicos.</p>
+<p>Son tareas técnicas o funcionales que deben ser llevadas a cabo para implementar una funcionalidad o mejorar un sistema, pero no están enfocadas en los beneficios que el usuario final obtendrá.</p>
+</section>
+<hr class="docutils" />
+<section id="ejemplo">
+<h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Permalink to this heading">#</a></h2>
+<div class="admonition-ejercicio admonition">
+<p class="admonition-title">Ejercicio</p>
+<p>Tomar las frases anteriores y reescribirlas como historias de usuario:</p>
+<ul class="simple">
+<li><p>“Modificar la base de datos para agregar un nuevo campo de información.”</p></li>
+<li><p>“Crear una nueva interfaz de usuario para la aplicación.”</p></li>
+<li><p>“Desarrollar una función de seguridad mejorada para el sistema.”</p></li>
+</ul>
+</div>
+<div class="admonition-solucion admonition">
+<p class="admonition-title">Solución</p>
+<ul class="simple">
+<li><p>“Como usuario, quiero tener la opción de agregar información adicional en mi perfil para que los demás usuarios puedan conocerme mejor.”</p></li>
+<li><p>“Como usuario, quiero una interfaz de usuario más intuitiva y fácil de usar para poder completar tareas más rápido.”</p></li>
+<li><p>“Como usuario, quiero sentirme seguro al usar la aplicación, por lo que deseo que se agregue una función de autenticación de dos factores.”</p></li>
+</ul>
+</div>
+</section>
+<hr class="docutils" />
+<section id="ejercicio">
+<h2>Ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this heading">#</a></h2>
+<p>A partir del siguiente objetivo de negocio propuesto, realizar el análisis de los requerimientos funcionales, no funcionales y redactar las historias de usuario.</p>
+<p><strong>Objetivo de Negocio:</strong></p>
+<p>Desarrollar una plataforma en línea para la gestión de tareas que permita a los equipos de trabajo remotos coordinar sus actividades y mantenerse al día con los objetivos del proyecto.</p>
+<p>Análicemos el proyecto…</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Requerimientos funcionales…<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">El sistema permitirá el registro de usuarios con diferentes niveles de permisos (administrador, colaborador, etc.).</p></li>
+<li><p class="sd-card-text">El sistema permitirá la creación de proyectos y asignación de tareas a los miembros del equipo.</p></li>
+<li><p class="sd-card-text">El sistema permitirá visualizar un calendario de tareas y eventos, con recordatorios y notificaciones automáticas.</p></li>
+<li><p class="sd-card-text">El sistema permitirá una comunicación en tiempo real entre los miembros del equipo, con la posibilidad de crear canales privados y públicos.</p></li>
+<li><p class="sd-card-text">El sistema permitirá tener un historial de tareas y avances del proyecto, con la posibilidad de generar informes y estadísticas.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Requerimientos NO funcionales…<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">La plataforma debe ser segura y proteger la información del usuario.</p></li>
+<li><p class="sd-card-text">Debe ser fácil de usar, con una interfaz intuitiva y amigable para el usuario.</p></li>
+<li><p class="sd-card-text">La plataforma debe ser escalable y adaptable para trabajar con equipos de diferentes tamaños y necesidades.</p></li>
+<li><p class="sd-card-text">Debe ser accesible desde cualquier dispositivo y navegador web.</p></li>
+<li><p class="sd-card-text">La plataforma debe ser confiable, con un tiempo de actividad del 99,9% y copias de seguridad regulares.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Historias de usuario…<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Como administrador, quiero poder crear y asignar tareas a los miembros del equipo para mantener el progreso del proyecto.</p></li>
+<li><p class="sd-card-text">Como miembro del equipo, quiero recibir notificaciones automáticas cuando se me asigna una nueva tarea para estar al tanto de mis responsabilidades.</p></li>
+<li><p class="sd-card-text">Como colaborador, quiero poder comunicarme con otros miembros del equipo en tiempo real para resolver problemas y hacer preguntas.</p></li>
+<li><p class="sd-card-text">Como gerente de proyecto, quiero poder generar informes y estadísticas sobre el progreso del proyecto para tomar decisiones informadas.</p></li>
+<li><p class="sd-card-text">Como usuario, quiero poder acceder a la plataforma desde mi teléfono móvil para poder revisar el progreso del proyecto mientras estoy en movimiento.</p></li>
+</ul>
+</div>
+</details></section>
+<hr class="docutils" />
+<section id="ejercicio-2">
+<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this heading">#</a></h2>
+<p>Dado el siguiente objetivo de negocio de un proyecto, determinar los requerimientos funcionales, no funcionales y las historias de usuario:</p>
+<p><strong>Objetivos de negocio</strong></p>
+<p>“Desarrollar un sistema que permita a los clientes realizar reservas en línea para un restaurante. El objetivo es mejorar la experiencia del cliente al permitirles reservar con anticipación y evitar tiempos de espera innecesarios en el restaurante”.</p>
+<p><strong>Desarrollen esto en parejas…</strong></p>
+</section>
+<hr class="docutils" />
+<section id="formato-para-levantar-historias-de-usuario-y-requerimientos">
+<h2>Formato para levantar historias de usuario y requerimientos<a class="headerlink" href="#formato-para-levantar-historias-de-usuario-y-requerimientos" title="Permalink to this heading">#</a></h2>
+<img src="_static/images/U6_6.png"/>
+<img src="_static/images/U6_5.png"/>
+<hr class="docutils" />
+<section id="formato-de-historias-de-usuario">
+<h3>Formato de historias de usuario<a class="headerlink" href="#formato-de-historias-de-usuario" title="Permalink to this heading">#</a></h3>
+<img src="_static/images/U6_7.png"/>
+</section>
+</section>
+<hr class="docutils" />
+<section id="ejercicio-3">
+<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this heading">#</a></h2>
+<p>Realicemos la aplicación de los formatos para el siguiente objetivo de negocio:</p>
+<p><strong>Objetivo de negocio:</strong></p>
+<p>Desarrollar un sistema que permita a los clientes realizar reservas en línea para un restaurante. El objetivo es mejorar la experiencia del cliente al permitirles reservar con anticipación y evitar tiempos de espera innecesarios en el restaurante.</p>
+<section id="formato-de-requerimientos-funcionales-y-no-funcionales">
+<h3>Formato de requerimientos funcionales y NO funcionales<a class="headerlink" href="#formato-de-requerimientos-funcionales-y-no-funcionales" title="Permalink to this heading">#</a></h3>
+<img src="_static/images/U6_8.png"/>
+</section>
+<section id="id1">
+<h3>Formato de historias de usuario<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<img src="_static/images/U6_9.png"/>
+</section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -503,11 +652,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="Unidad7.html"
+       href="Unidades/Unidad_6/casosUso.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unidad 7: Especificación y formatos para HU y CU</p>
+        <p class="prev-next-title">Casos de uso</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -530,7 +679,22 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-una-historia-de-usuario">Qué es una historia de usuario?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estrutura-de-una-historia-de-usuario">Estrutura de una historia de usuario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-una-historia-de-usuario">Ejemplo de una historia de usuario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-no-es-una-historia-de-usuario">¿Qué NO es una historia de usuario?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-para-levantar-historias-de-usuario-y-requerimientos">Formato para levantar historias de usuario y requerimientos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-historias-de-usuario">Formato de historias de usuario</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-requerimientos-funcionales-y-no-funcionales">Formato de requerimientos funcionales y NO funcionales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Formato de historias de usuario</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Unidad 11: Técnicas de despliegue &#8212; Desarrollo de Software II 2023 - 03</title>
+    <title>Casos de uso &#8212; Desarrollo de Software II 2023 - 03</title>
   
   
   
@@ -19,53 +19,53 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Unidad11';</script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Unidad 12: Implementación, integración y pruebas" href="Unidad12.html" />
-    <link rel="prev" title="Unidad 10: Arquitectura y patrones" href="Unidad10.html" />
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Unidades/Unidad_6/casosUso';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Unidad 7: Especificación y formatos para HU y CU" href="../../Unidad7.html" />
+    <link rel="prev" title="Unidad 6: Historias de usuario y casos de uso" href="../../Unidad6.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -93,7 +93,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="search.html"
+      action="../../search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -131,7 +131,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="../../intro.html">
   
   
   
@@ -151,20 +151,20 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
+                <a class="reference internal" href="../../intro.html">
                     Desarrollo de Software II
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="Unidad1.html">Unidad 1: Desarrollo en Equipo</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_1/clase1_2.html">Integrantes y roles de un equipo de desarrollo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_1/Evaluemos_Unidad1.html">Actividades para la clase</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad1.html">Unidad 1: Desarrollo en Equipo</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_1/clase1_2.html">Integrantes y roles de un equipo de desarrollo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_1/Evaluemos_Unidad1.html">Actividades para la clase</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Unidad2.html">Unidad 2: Repaso Programación Python y Java para backend</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_2/repaso_python_java.html">Repaso de Python y Java para desarrollo de software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_2/Clase1_Semana2_TiposDeDatosCondicionalesCiclosColeccionesFunciones.html"><strong>Introducción</strong></a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad2.html">Unidad 2: Repaso Programación Python y Java para backend</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_2/repaso_python_java.html">Repaso de Python y Java para desarrollo de software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_2/Clase1_Semana2_TiposDeDatosCondicionalesCiclosColeccionesFunciones.html"><strong>Introducción</strong></a></li>
 
 
 
@@ -186,7 +186,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_2/Clase2_Semana2_EstructurasParaSoftwareJava.html">Repaso Estructuras Java Vs Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_2/Clase2_Semana2_EstructurasParaSoftwareJava.html">Repaso Estructuras Java Vs Python</a></li>
 
 
 
@@ -195,7 +195,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_2/Clase2_Semana2_EstructurasParaSoftwarePython.html">Función útil para ver los métodos de un objeto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_2/Clase2_Semana2_EstructurasParaSoftwarePython.html">Función útil para ver los métodos de un objeto</a></li>
 
 
 
@@ -205,15 +205,15 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_2/Clase2_Semana2_Pandas_10_08_2023.html">Introducción a pandas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_2/Clase2_Semana2_Manejo_ficheros.html">Manejo de archivos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_2/Clase2_Semana2_Pandas_10_08_2023.html">Introducción a pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_2/Clase2_Semana2_Manejo_ficheros.html">Manejo de archivos</a></li>
 
 
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Unidad3.html">Unidad 3: Modelos de procesos de software</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_3/Tipos_procesos_Software.html">Tipos de procesos de software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_3/Repaso_DB_conn_IntroORM.html">Recordemos lo que es una base de datos</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad3.html">Unidad 3: Modelos de procesos de software</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_3/Tipos_procesos_Software.html">Tipos de procesos de software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_3/Repaso_DB_conn_IntroORM.html">Recordemos lo que es una base de datos</a></li>
 
 
 
@@ -222,32 +222,32 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_3/EvaluemosLoAprendido.html">Evaluemos lo aprendido!!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_3/EvaluemosLoAprendido.html">Evaluemos lo aprendido!!</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Unidad4.html">Unidad 4: Ingeniería de requisitos</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_4/Niveles_RF_RNF.html">Niveles de requisitos</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad4.html">Unidad 4: Ingeniería de requisitos</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_4/Niveles_RF_RNF.html">Niveles de requisitos</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_4/EvaluemosLoAprendido.html">🚀 Vamos a la acción…</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_4/EvaluemosLoAprendido.html">🚀 Vamos a la acción…</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Unidad5.html">Unidad 5: Requisitos funcionales y NO funcionales</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_5/EvaluemosLoAprendido.html">🚀 Vamos a la acción…</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_5/Elicitacion_requisitos_casosEstudio.html">Elicitación de requerimientos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_5/SesionInicial_BackendFastAPI_v1.html">Backend FastAPI</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad5.html">Unidad 5: Requisitos funcionales y NO funcionales</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_5/EvaluemosLoAprendido.html">🚀 Vamos a la acción…</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_5/Elicitacion_requisitos_casosEstudio.html">Elicitación de requerimientos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_5/SesionInicial_BackendFastAPI_v1.html">Backend FastAPI</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Unidad6.html">Unidad 6: Historias de usuario y casos de uso</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_6/casosUso.html">Casos de uso</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../Unidad6.html">Unidad 6: Historias de usuario y casos de uso</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Casos de uso</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Unidad7.html">Unidad 7: Especificación y formatos para HU y CU</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Unidad8.html">Unidad 8: Mockup’s y UI’s</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Unidad9.html">Unidad 9: Herramientas para desarrollo y gestión de proyectos de software</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Unidad10.html">Unidad 10: Arquitectura y patrones</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unidad 11: Técnicas de despliegue</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Unidad12.html">Unidad 12: Implementación, integración y pruebas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Unidad13.html">Unidad 13: Computación en la nube</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Unidad7.html">Unidad 7: Especificación y formatos para HU y CU</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Unidad8.html">Unidad 8: Mockup’s y UI’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Unidad9.html">Unidad 9: Herramientas para desarrollo y gestión de proyectos de software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Unidad10.html">Unidad 10: Arquitectura y patrones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Unidad11.html">Unidad 11: Técnicas de despliegue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Unidad12.html">Unidad 12: Implementación, integración y pruebas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Unidad13.html">Unidad 13: Computación en la nube</a></li>
 </ul>
 
     </div>
@@ -319,7 +319,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/BioAITeamLearning/SoftwareII_2023_03_Ucaldas/issues/new?title=Issue%20on%20page%20%2FUnidad11.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/BioAITeamLearning/SoftwareII_2023_03_Ucaldas/issues/new?title=Issue%20on%20page%20%2FUnidades/Unidad_6/casosUso.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -349,7 +349,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/Unidad11.md" target="_blank"
+      <li><a href="../../_sources/Unidades/Unidad_6/casosUso.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -431,7 +431,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Unidad 11: Técnicas de despliegue</h1>
+    <h1>Casos de uso</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -441,8 +441,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-de-casos-de-uso">Modelos de casos de uso</a></li>
 </ul>
             </nav>
         </div>
@@ -454,14 +453,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="unidad-11-tecnicas-de-despliegue">
-<h1>Unidad 11: Técnicas de despliegue<a class="headerlink" href="#unidad-11-tecnicas-de-despliegue" title="Permalink to this heading">#</a></h1>
-<section id="contenido-de-la-unidad">
-<h2>Contenido de la unidad<a class="headerlink" href="#contenido-de-la-unidad" title="Permalink to this heading">#</a></h2>
-<img src="_static/images/contenidoU11.png"/>
-</section>
-<section id="espere-aca-el-contenido-de-las-siguientes-versiones">
-<h2>Espere acá el contenido de las siguientes versiones<a class="headerlink" href="#espere-aca-el-contenido-de-las-siguientes-versiones" title="Permalink to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="casos-de-uso">
+<h1>Casos de uso<a class="headerlink" href="#casos-de-uso" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Modela la interacción del usuario con el sistema.</p></li>
+<li><p>Generalmente hay pocos actores asociados a los casos de uso.</p></li>
+</ul>
+<img src="../../_static/images/U6_10.png"/>
+<hr class="docutils" />
+<section id="modelos-de-casos-de-uso">
+<h2>Modelos de casos de uso<a class="headerlink" href="#modelos-de-casos-de-uso" title="Permalink to this heading">#</a></h2>
+<p>Para cada caso de uso debe existir una <strong>descripción detallada</strong> de cómo el usuario realizará la <strong>interacción</strong> con el sistema.</p>
+<img src="../../_static/images/U6_11.png"/>
 </section>
 </section>
 
@@ -478,7 +481,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./."
+            path: "./Unidades/Unidad_6"
         },
         predefinedOutput: true
     }
@@ -497,20 +500,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Unidad10.html"
+       href="../../Unidad6.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Unidad 10: Arquitectura y patrones</p>
+        <p class="prev-next-title">Unidad 6: Historias de usuario y casos de uso</p>
       </div>
     </a>
     <a class="right-next"
-       href="Unidad12.html"
+       href="../../Unidad7.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unidad 12: Implementación, integración y pruebas</p>
+        <p class="prev-next-title">Unidad 7: Especificación y formatos para HU y CU</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -532,8 +535,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-de-casos-de-uso">Modelos de casos de uso</a></li>
 </ul>
   </nav></div>
 
@@ -581,8 +583,8 @@ By Reinel Tabares, Johan Piña, Brayan Arteaga
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
