@@ -35,6 +35,9 @@ chapters:
     - file: "Unidades/Unidad_5/SesionInicial_BackendFastAPI_v1"
     
 - file: Unidad6
+  sections:
+    - file: "Unidades/Unidad_6/casosUso"
+
 - file: Unidad7
 - file: Unidad8
 - file: Unidad9
