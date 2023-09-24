@@ -53,7 +53,7 @@ Tomar las frases anteriores y reescribirlas como historias de usuario:
 
 :::
 
-:::{admonition} Solución
+```{dropdown} Solución
 
 * "Como usuario, quiero tener la opción de agregar información adicional en mi perfil para que los demás usuarios puedan conocerme mejor."
 
@@ -61,7 +61,7 @@ Tomar las frases anteriores y reescribirlas como historias de usuario:
 
 * "Como usuario, quiero sentirme seguro al usar la aplicación, por lo que deseo que se agregue una función de autenticación de dos factores."
 
-:::
+```
 
 ---
 
