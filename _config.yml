@@ -29,3 +29,14 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+
+
+parse:
+  myst_enable_extensions:
+    - dollarmath
+    - linkify
+    - substitution
+    - colon_fence
+    - html_admonition
+  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
+  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
