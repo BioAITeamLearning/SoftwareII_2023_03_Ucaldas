@@ -64,8 +64,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Unidad7';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Unidad 8: Mockup’s y UI’s" href="Unidad8.html" />
-    <link rel="prev" title="🚀 Vamos a la acción…" href="Unidades/Unidad_6/EvaluamosLoAprendido.html" />
+    <link rel="next" title="🚀 Vamos a la acción…" href="Unidades/Unidad_7/EvaluamosLoAprendido.html" />
+    <link rel="prev" title="Casos de uso" href="Unidades/Unidad_6/casosUso.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -239,10 +239,12 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Unidad6.html">Unidad 6: Historias de usuario y casos de uso</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_6/casosUso.html">Casos de uso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_6/EvaluamosLoAprendido.html">🚀 Vamos a la acción…</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unidad 7: Especificación y formatos para HU y CU</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Unidad 7: Especificación y formatos para HU y CU</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_7/EvaluamosLoAprendido.html">🚀 Vamos a la acción…</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad8.html">Unidad 8: Mockup’s y UI’s</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad9.html">Unidad 9: Herramientas para desarrollo y gestión de proyectos de software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad10.html">Unidad 10: Arquitectura y patrones</a></li>
@@ -443,7 +445,21 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#especificacion-de-casos-de-uso">Especificación de casos de uso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-especificacion-de-casos-de-uso">Formato de especificación de casos de uso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-especificacion-de-casos-de-uso-flujos-basicos">Formato de especificación de casos de uso: Flujos básicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-especificacion-de-casos-de-uso-flujos-alternativos">Formato de especificación de casos de uso: Flujos alternativos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-especificacion-de-casos-de-uso-asignar-una-cita">Ejemplo de especificación de casos de uso: Asignar una cita</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#escenarios">Escenarios:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelado-del-caso-de-uso">Modelado del caso de uso</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#especificacion-de-casos-de-uso-asignar-una-cita">Especificación de casos de uso: Asignar una cita</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flujo-normal-basico-de-eventos">Flujo normal básico de eventos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flujo-alternativo-de-eventos-paciente-no-registrado">Flujo alternativo de eventos: Paciente no registrado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-queda-el-formato">¿Cómo queda el formato?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#otro-ejemplo-de-especificacion-de-casos-de-uso">Otro ejemplo de especificación de casos de uso:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
 </ul>
             </nav>
         </div>
@@ -461,9 +477,130 @@ document.write(`
 <h2>Contenido de la unidad<a class="headerlink" href="#contenido-de-la-unidad" title="Permalink to this heading">#</a></h2>
 <img src="_static/images/contenidoU7.png"/>
 </section>
-<section id="espere-aca-el-contenido-de-las-siguientes-versiones">
-<h2>Espere acá el contenido de las siguientes versiones<a class="headerlink" href="#espere-aca-el-contenido-de-las-siguientes-versiones" title="Permalink to this heading">#</a></h2>
+<section id="especificacion-de-casos-de-uso">
+<h2>Especificación de casos de uso<a class="headerlink" href="#especificacion-de-casos-de-uso" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Generalmente hay pocos actores asociados a los casos de uso.</p></li>
+<li><p>Se relaciona con las historias de usuario</p></li>
+</ul>
+<img src="_static/images/U7_1.png"/>
+<hr class="docutils" />
+<img src="_static/images/U7_2.png"/>
 </section>
+<hr class="docutils" />
+<section id="formato-de-especificacion-de-casos-de-uso">
+<h2>Formato de especificación de casos de uso<a class="headerlink" href="#formato-de-especificacion-de-casos-de-uso" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Las precondiciones <strong>NO</strong> necesariamente son entradas. Ejemplo: El usuario debe estar autenticado.</p></li>
+<li><p>Las postcondiciones <strong>NO</strong> necesariamente son salidas. Ejemplo: Almacena la información en la base de datos.</p></li>
+</ul>
+<img src="_static/images/U7_3.png"/>
+</section>
+<hr class="docutils" />
+<section id="formato-de-especificacion-de-casos-de-uso-flujos-basicos">
+<h2>Formato de especificación de casos de uso: Flujos básicos<a class="headerlink" href="#formato-de-especificacion-de-casos-de-uso-flujos-basicos" title="Permalink to this heading">#</a></h2>
+<p>Los flujos básicos describen las interacciones entre el actor y el sistema (numerados).</p>
+<ul class="simple">
+<li><p>Deben especificarse los datos de entrada y de salida</p></li>
+<li><p>Los cálculos y validaciones que se deben realizar</p></li>
+<li><p>Debe ser entendido por el usuario.</p></li>
+</ul>
+<img src="_static/images/U7_4.png"/>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;&lt;include&gt;&gt;</span></code> Cuando esta característica se menciona es porque un Caso de Uso llama de manera obligatoria a otro.</p>
+</section>
+<hr class="docutils" />
+<section id="formato-de-especificacion-de-casos-de-uso-flujos-alternativos">
+<h2>Formato de especificación de casos de uso: Flujos alternativos<a class="headerlink" href="#formato-de-especificacion-de-casos-de-uso-flujos-alternativos" title="Permalink to this heading">#</a></h2>
+<p>Los flujos alternativos son los que pueden pasar cuando se presentan errores (tanto del usuario como del sistema)
+o cuando el usuario toma alguna decisión que lleva a acciones alternas o complementarias al flujo normal básico.</p>
+<p>Cuando se formule el flujo alternativo, se debe evidenciar el caso de uso que se está extendiendo.</p>
+<img src="_static/images/U7_5.png"/>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;&lt;extend&gt;&gt;</span></code> Cuando esta característica se menciona es porque un Caso de Uso puede llamar a otro.</p>
+</section>
+<hr class="docutils" />
+<section id="ejemplo-de-especificacion-de-casos-de-uso-asignar-una-cita">
+<h2>Ejemplo de especificación de casos de uso: Asignar una cita<a class="headerlink" href="#ejemplo-de-especificacion-de-casos-de-uso-asignar-una-cita" title="Permalink to this heading">#</a></h2>
+<img src="_static/images/U7_6.png"/>
+<section id="escenarios">
+<h3>Escenarios:<a class="headerlink" href="#escenarios" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Se asigna exitosamente</p></li>
+<li><p>Paciente  no registrado</p></li>
+<li><p>Error al ingresar el documento</p></li>
+<li><p>No hay citas disponibles</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="modelado-del-caso-de-uso">
+<h3>Modelado del caso de uso<a class="headerlink" href="#modelado-del-caso-de-uso" title="Permalink to this heading">#</a></h3>
+<img src="_static/images/U7_7.png"/>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>OJO: El paciente no se modela ya que no es un actor directo del sistema a desarrollar.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="especificacion-de-casos-de-uso-asignar-una-cita">
+<h3>Especificación de casos de uso: Asignar una cita<a class="headerlink" href="#especificacion-de-casos-de-uso-asignar-una-cita" title="Permalink to this heading">#</a></h3>
+<img src="_static/images/U7_8.png"/>
+</section>
+<hr class="docutils" />
+<section id="flujo-normal-basico-de-eventos">
+<h3>Flujo normal básico de eventos<a class="headerlink" href="#flujo-normal-basico-de-eventos" title="Permalink to this heading">#</a></h3>
+<img src="_static/images/U7_8_1.png"/>
+</section>
+<hr class="docutils" />
+<section id="flujo-alternativo-de-eventos-paciente-no-registrado">
+<h3>Flujo alternativo de eventos: Paciente no registrado<a class="headerlink" href="#flujo-alternativo-de-eventos-paciente-no-registrado" title="Permalink to this heading">#</a></h3>
+<img src="_static/images/U7_9.png"/>
+</section>
+<hr class="docutils" />
+<section id="como-queda-el-formato">
+<h3>¿Cómo queda el formato?<a class="headerlink" href="#como-queda-el-formato" title="Permalink to this heading">#</a></h3>
+<img src="_static/images/U7_10.png"/>
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-1 docutils">
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>💬 Recurso extra!</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://gcloud.devoteam.com/wp-content/uploads/sites/32/2021/08/Google_Docs_logo_2014-2020.svg.png"><img alt="https://gcloud.devoteam.com/wp-content/uploads/sites/32/2021/08/Google_Docs_logo_2014-2020.svg.png" src="https://gcloud.devoteam.com/wp-content/uploads/sites/32/2021/08/Google_Docs_logo_2014-2020.svg.png" style="height: 100px;" /></a>
+<p class="sd-card-text">Recurso Extra: Diagramas y especificación de casos de uso</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this book <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://github.com/BioAITeamLearning/SoftwareII_2023_03_Ucaldas/raw/main/Unidades/Unidad_7/Ejemplo_especificacionCasoUso.docx"></a></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="otro-ejemplo-de-especificacion-de-casos-de-uso">
+<h2>Otro ejemplo de especificación de casos de uso:<a class="headerlink" href="#otro-ejemplo-de-especificacion-de-casos-de-uso" title="Permalink to this heading">#</a></h2>
+<img src="_static/images/U7_11.png"/>
+</section>
+<hr class="docutils" />
+<section id="ejercicio">
+<h2>Ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this heading">#</a></h2>
+<div class="admonition-ejercicio admonition">
+<p class="admonition-title">Ejercicio</p>
+<img src="https://www.acentoespanol.com/wp-content/uploads/2019/11/2e1ax_nomad_entry_shutterstock_129399062.jpg"/>
+<p>Teniendo en cuenta los objetivos planteados, realice los diagramas de caso de uso y la especificación.</p>
+<p><strong>Objetivo del proyecto:</strong> Desarrollar un sistema de gestión de ventas en línea para mejorar la eficiencia y la experiencia del usuario.</p>
+<p><strong>Objetivo de negocio:</strong> Incrementar la cantidad de ventas en línea y mejorar la satisfacción del cliente mediante la implementación de un sistema de gestión de ventas en línea que permita una mayor eficiencia en el proceso de compra y una mejor experiencia de usuario en la plataforma.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Solución<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<img src="_static/images/U7_12.png"/>
+</div>
+</details></section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -498,20 +635,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Unidades/Unidad_6/EvaluamosLoAprendido.html"
+       href="Unidades/Unidad_6/casosUso.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">🚀 Vamos a la acción…</p>
+        <p class="prev-next-title">Casos de uso</p>
       </div>
     </a>
     <a class="right-next"
-       href="Unidad8.html"
+       href="Unidades/Unidad_7/EvaluamosLoAprendido.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unidad 8: Mockup’s y UI’s</p>
+        <p class="prev-next-title">🚀 Vamos a la acción…</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -534,7 +671,21 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#especificacion-de-casos-de-uso">Especificación de casos de uso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-especificacion-de-casos-de-uso">Formato de especificación de casos de uso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-especificacion-de-casos-de-uso-flujos-basicos">Formato de especificación de casos de uso: Flujos básicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formato-de-especificacion-de-casos-de-uso-flujos-alternativos">Formato de especificación de casos de uso: Flujos alternativos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-especificacion-de-casos-de-uso-asignar-una-cita">Ejemplo de especificación de casos de uso: Asignar una cita</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#escenarios">Escenarios:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelado-del-caso-de-uso">Modelado del caso de uso</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#especificacion-de-casos-de-uso-asignar-una-cita">Especificación de casos de uso: Asignar una cita</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flujo-normal-basico-de-eventos">Flujo normal básico de eventos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flujo-alternativo-de-eventos-paciente-no-registrado">Flujo alternativo de eventos: Paciente no registrado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-queda-el-formato">¿Cómo queda el formato?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#otro-ejemplo-de-especificacion-de-casos-de-uso">Otro ejemplo de especificación de casos de uso:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
 </ul>
   </nav></div>
 
