@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Unidad8';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Unidad 9: Herramientas para desarrollo y gestión de proyectos de software" href="Unidad9.html" />
+    <link rel="next" title="Caso de éxito Mockups" href="Unidades/Unidad_8/mockups.html" />
     <link rel="prev" title="🚀 Vamos a la acción…" href="Unidades/Unidad_7/EvaluamosLoAprendido.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -245,7 +245,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_7/EvaluamosLoAprendido.html">🚀 Vamos a la acción…</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unidad 8: Mockup’s y UI’s</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Unidad 8: Mockup’s y UI’s</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_8/mockups.html">Caso de éxito Mockups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_8/EvaluemosLoAprendido.html">🚀 Vamos a la acción…</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad9.html">Unidad 9: Herramientas para desarrollo y gestión de proyectos de software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad10.html">Unidad 10: Arquitectura y patrones</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad11.html">Unidad 11: Técnicas de despliegue</a></li>
@@ -445,7 +449,14 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-son-los-mockups">¿Qué son los mockups?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-son-los-ui-s">¿Qué son los UI’s?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#utilidad-de-los-mockups-y-ui-s-en-el-proceso-de-software">Utilidad de los mockups y UI’s en el proceso de software</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-ve-un-mockup">¿Cómo se ve un Mockup?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#herramientas-para-crear-mockups">Herramientas para crear Mockups</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proceso-de-creacion-de-un-mockup">Proceso de creación de un Mockup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#veamos-como-funciona-balsamiq">Veamos como funciona Balsamiq</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enlaces-extra">🌐 Enlaces extra</a></li>
 </ul>
             </nav>
         </div>
@@ -463,9 +474,102 @@ document.write(`
 <h2>Contenido de la unidad<a class="headerlink" href="#contenido-de-la-unidad" title="Permalink to this heading">#</a></h2>
 <img src="_static/images/contenidoU8.png"/>
 </section>
-<section id="espere-aca-el-contenido-de-las-siguientes-versiones">
-<h2>Espere acá el contenido de las siguientes versiones<a class="headerlink" href="#espere-aca-el-contenido-de-las-siguientes-versiones" title="Permalink to this heading">#</a></h2>
+<section id="que-son-los-mockups">
+<h2>¿Qué son los mockups?<a class="headerlink" href="#que-son-los-mockups" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Es la representación visual de un <strong>Prototipo</strong> del proyecto que se va a realizar.</p></li>
+<li><p>Una serie de imágenes que nos mostrarán el resultado que tendrá la maqueta web.</p></li>
+</ul>
+<img src="_static/images/mockup.png"/>
 </section>
+<hr class="docutils" />
+<section id="que-son-los-ui-s">
+<h2>¿Qué son los UI’s?<a class="headerlink" href="#que-son-los-ui-s" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Un <strong>mockup</strong> es una interfaz de usuario.</p></li>
+<li><p>Es la representación visual de la interfaz de usuario.</p></li>
+<li><p>Es la parte del diseño que se encarga de la interacción del usuario con el sistema.</p></li>
+<li><p>El diseño de la interfaz de usuario debe garantizar que la interacción entre el ser humano y la máquina, se realice de manera satisfactoria.</p></li>
+</ul>
+<img src="_static/images/ui.png"/>
+</section>
+<hr class="docutils" />
+<section id="utilidad-de-los-mockups-y-ui-s-en-el-proceso-de-software">
+<h2>Utilidad de los mockups y UI’s en el proceso de software<a class="headerlink" href="#utilidad-de-los-mockups-y-ui-s-en-el-proceso-de-software" title="Permalink to this heading">#</a></h2>
+<img src="_static/images/utilidad.png"/>
+<ol class="arabic simple">
+<li><p>Ayudan a visualizar y planificar la interfaz de usuario (UI) y la experiencia de usuario (UX) de la aplicación o sitio web antes de comenzar a programar. Esto permite a los diseñadores y desarrolladores tener una comprensión clara de cómo se verá y funcionará la aplicación antes de invertir tiempo y recursos en la programación.</p></li>
+<li><p>Permiten obtener retroalimentación temprana de los usuarios, clientes y stakeholders sobre la funcionalidad y el diseño de la aplicación. Los mockups son más fáciles de crear y modificar que el código real, lo que significa que los diseñadores pueden experimentar con diferentes opciones y recibir comentarios rápidos sobre lo que funciona y lo que no.</p></li>
+<li><p>Facilitan la comunicación entre los diseñadores y desarrolladores, ya que los mockups proporcionan una base visual para que los equipos discutan los detalles de la UI y la UX. Esto puede reducir el tiempo que se tarda en completar una tarea y disminuir la posibilidad de malentendidos o errores en la implementación.</p></li>
+<li><p>Pueden ayudar a identificar problemas potenciales en la funcionalidad o el diseño de la aplicación antes de la implementación. Si se descubre un problema en un mockup, es más fácil y económico corregirlo en esta etapa que después de que se ha escrito el código.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="como-se-ve-un-mockup">
+<h2>¿Cómo se ve un Mockup?<a class="headerlink" href="#como-se-ve-un-mockup" title="Permalink to this heading">#</a></h2>
+<p>Este tipo de representaciones visuales pueden ser muy variadas, desde un simple boceto en papel hasta un prototipo interactivo.</p>
+<img src="_static/images/mockup2.png"/>
+<img src="_static/images/mockup3.png"/>
+</section>
+<hr class="docutils" />
+<section id="herramientas-para-crear-mockups">
+<h2>Herramientas para crear Mockups<a class="headerlink" href="#herramientas-para-crear-mockups" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://balsamiq.com/">Balsamiq</a></p></li>
+<li><p><a class="reference external" href="https://www.mockflow.com/">Mockflow</a></p></li>
+<li><p><a class="reference external" href="https://www.mockplus.com/">Mockplus</a></p></li>
+<li><p><a class="reference external" href="https://moqups.com/">Moqups</a></p></li>
+<li><p><a class="reference external" href="https://wireframe.cc/">Wireframe.cc</a></p></li>
+<li><p><a class="reference external" href="https://www.figma.com/">Figma</a></p></li>
+<li><p><a class="reference external" href="https://www.adobe.com/products/xd.html">Adobe XD</a></p></li>
+<li><p><a class="reference external" href="https://www.sketch.com/">Sketch</a></p></li>
+<li><p><a class="reference external" href="https://www.invisionapp.com/">Invision</a></p></li>
+<li><p><a class="reference external" href="https://marvelapp.com/">Marvel</a></p></li>
+<li><p><a class="reference external" href="https://www.framer.com/">Framer</a></p></li>
+<li><p><a class="reference external" href="https://www.axure.com/">Axure</a></p></li>
+<li><p><a class="reference external" href="https://www.uxpin.com/">UXPin</a></p></li>
+<li><p><a class="reference external" href="https://proto.io/">Proto.io</a></p></li>
+<li><p><a class="reference external" href="https://www.fluidui.com/">Fluid UI</a></p></li>
+<li><p><a class="reference external" href="https://www.justinmind.com/">Justinmind</a></p></li>
+<li><p><a class="reference external" href="https://origami.design/">Origami Studio</a></p></li>
+<li><p><a class="reference external" href="https://principleformac.com/">Principle</a></p></li>
+</ul>
+<img src="_static/images/mockup4.png"/>
+</section>
+<hr class="docutils" />
+<section id="proceso-de-creacion-de-un-mockup">
+<h2>Proceso de creación de un Mockup<a class="headerlink" href="#proceso-de-creacion-de-un-mockup" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Identificar</strong> los elementos que deben incluirse en esta representación visual.</p></li>
+</ul>
+<img src="_static/images/mockupI.png"/>
+<ul class="simple">
+<li><p><strong>Implementar</strong> el mockup.</p></li>
+</ul>
+<img src="_static/images/mockupII.png"/>
+<ul class="simple">
+<li><p><strong>Verificar</strong> que el mockup cumpla con los requerimientos y esté alineado a los casos de uso.</p></li>
+</ul>
+</section>
+<section id="veamos-como-funciona-balsamiq">
+<h2>Veamos como funciona Balsamiq<a class="headerlink" href="#veamos-como-funciona-balsamiq" title="Permalink to this heading">#</a></h2>
+<img src="_static/images/balsamiq.png"/>
+</section>
+<section id="enlaces-extra">
+<h2>🌐 Enlaces extra<a class="headerlink" href="#enlaces-extra" title="Permalink to this heading">#</a></h2>
+<p><strong>Recursos educativos de mockups</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=6vXjEd6BWgo&amp;ab_channel=LuisAngelVelasco">Aprende a utilizar balsamiq Mockups paso a paso con ejemplos - YouTube</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=4WqfxF1QjTM&amp;ab_channel=EDteam">Minicurso de Balsamiq Mockups (1) - Los wireframes y la interfaz - YouTube</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=mmjLcW68w24&amp;ab_channel=EDteam">Minicurso de Balsamiq Mockups (2) - La libreria de elementos - YouTube</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=oMMwi7F1YoM&amp;ab_channel=EDteam">Minicurso de Balsamiq Mockups (3) - Assets y simbolos - YouTube</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=ek3dtaN9iyI&amp;ab_channel=EDteam">Minicurso de Balsamiq Mockups (4, final) - Presentar el proyecto - YouTube</a></p></li>
+</ul>
+<p><strong>Figma</strong>
+<a class="reference external" href="https://www.youtube.com/watch?v=1MK8l_X8FJ0&amp;ab_channel=TemplunebyDiegoVel%C3%A1zquez">Figma Tutorial - Como utilizar Mockups - YouTube</a></p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -509,11 +613,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="Unidad9.html"
+       href="Unidades/Unidad_8/mockups.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unidad 9: Herramientas para desarrollo y gestión de proyectos de software</p>
+        <p class="prev-next-title">Caso de éxito Mockups</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -536,7 +640,14 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-son-los-mockups">¿Qué son los mockups?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-son-los-ui-s">¿Qué son los UI’s?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#utilidad-de-los-mockups-y-ui-s-en-el-proceso-de-software">Utilidad de los mockups y UI’s en el proceso de software</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-ve-un-mockup">¿Cómo se ve un Mockup?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#herramientas-para-crear-mockups">Herramientas para crear Mockups</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proceso-de-creacion-de-un-mockup">Proceso de creación de un Mockup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#veamos-como-funciona-balsamiq">Veamos como funciona Balsamiq</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enlaces-extra">🌐 Enlaces extra</a></li>
 </ul>
   </nav></div>
 
