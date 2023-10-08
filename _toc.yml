@@ -42,6 +42,9 @@ chapters:
     - file: "Unidades/Unidad_7/EvaluamosLoAprendido"
 
 - file: Unidad8
+  sections:
+    - file: "Unidades/Unidad_8/mockups"
+    - file: "Unidades/Unidad_8/EvaluemosLoAprendido"
 - file: Unidad9
 - file: Unidad10
 - file: Unidad11
