@@ -75,7 +75,7 @@ La compañía **"DeliciousMeals"** necesita una plataforma que permita a los cli
 
 <img src="../../_static/images/ECUEE1.png" />
 
-### 📌  Caso de uso 2: Autenticación de usuarios.
+### 📌  Caso de uso 2: Registrar usuarios.
 
 <img src="../../_static/images/ECUEE1_2.png" />
 
