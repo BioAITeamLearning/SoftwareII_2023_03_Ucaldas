@@ -48,11 +48,12 @@ La compañía **"DeliciousMeals"** necesita una plataforma que permita a los cli
 ## 📌  Casos de uso:
 
 1. 📍 Autenticación de usuarios.
-2. 👀 Visualizar disponibilidad.
-3. ✅ Realizar una reserva.
-4. 🍽️ Gestionar reservas.
-5. ❌ Cancelar reserva.
-6. 📆 Actualizar disponibilidad.
+2. 🔐 Registrar usuarios.
+3. 👀 Visualizar disponibilidad.
+4. ✅ Realizar una reserva.
+5. 🍽️ Gestionar reservas.
+6. ❌ Cancelar reserva.
+7. 📆 Actualizar disponibilidad.
 
 ### 👥 Actores del sistema:
 
@@ -74,23 +75,27 @@ La compañía **"DeliciousMeals"** necesita una plataforma que permita a los cli
 
 <img src="../../_static/images/ECUEE1.png" />
 
-### 📌  Caso de uso 2: Visualizar disponibilidad.
+### 📌  Caso de uso 1: Autenticación de usuarios.
+
+<img src="../../_static/images/ECUEE1_2.png" />
+
+### 📌  Caso de uso 3: Visualizar disponibilidad.
 
 <img src="../../_static/images/ECUEE2.png" />
 
-### 📌  Caso de uso 3: Realizar una reserva.
+### 📌  Caso de uso 4: Realizar una reserva.
 
 <img src="../../_static/images/ECUEE3.png" />
 
-### 📌  Caso de uso 4: Gestionar reservas.
+### 📌  Caso de uso 5: Gestionar reservas.
 
 <img src="../../_static/images/ECUEE4.png" />
 
-### 📌  Caso de uso 5: Cancelar reserva.
+### 📌  Caso de uso 6: Cancelar reserva.
 
 <img src="../../_static/images/ECUEE5.png" />
 
-### 📌  Caso de uso 6: Actualizar disponibilidad.
+### 📌  Caso de uso 7: Actualizar disponibilidad.
 
 <img src="../../_static/images/ECUEE6.png" />
 
