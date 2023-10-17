@@ -99,6 +99,8 @@ La compañía **"DeliciousMeals"** necesita una plataforma que permita a los cli
 
 <img src="../../_static/images/ECUEE6.png" />
 
+---
+
 ::::{card-carousel} 1
 
 :::{card}
