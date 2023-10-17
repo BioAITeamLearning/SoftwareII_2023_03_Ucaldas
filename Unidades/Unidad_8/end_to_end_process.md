@@ -119,3 +119,25 @@ Documento cuadros end-to-end
 Explore this book {fas}`arrow-right`
 :::
 ::::
+
+
+## 📌  Mockups:
+
+### 📌  Mockup 1: Autenticación de usuarios.
+
+<img src="../../_static/images/Mockup1.png" />
+
+### 📌  Mockup 2: Registrar usuarios.
+
+<img src="../../_static/images/Mockup2_2.png" />
+
+### Proyecto en gihtubPages:
+
+<iframe src="https://johanpina.github.io/mockup_example/" width="700" height="700" frameborder="0" scrolling="no"></iframe>
+
+
+---
+
+## 📘 Actividad en clase:
+
+Realice en la herramienta figma los mockups de los casos de uso 3, 4, 5, 6 y 7.
