@@ -101,7 +101,7 @@ La compañía **"DeliciousMeals"** necesita una plataforma que permita a los cli
 :class-body: text-center
 :class-header: bg-light text-center
 :link: https://github.com/BioAITeamLearning/SoftwareII_2023_03_Ucaldas/raw/main/Unidades/Unidad_8/end2_end.xlsx
-**💬 Documento de apoyo*
+**💬 Documento de apoyo**
 ^^^
 ```{image} https://mailmeteor.com/logos/assets/PNG/Google_Sheets_Logo_512px.png
 :height: 100
