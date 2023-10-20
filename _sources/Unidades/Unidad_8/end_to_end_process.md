@@ -141,3 +141,25 @@ Explore this book {fas}`arrow-right`
 ## 📘 Actividad en clase:
 
 Realice en la herramienta figma los mockups de los casos de uso 3, 4, 5, 6 y 7.
+
+
+## Repositorio de la monitoria de backend
+
+::::{card-carousel} 1
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: https://github.com/johanpina/UcaldasBasicBack/tree/main
+**💬 Repositorio de apoyo**
+^^^
+```{image} https://cdn-icons-png.flaticon.com/512/25/25231.png
+:height: 100
+```
+
+Repositorio con practica de backend.
++++
+Explore this book {fas}`arrow-right`
+:::
+::::
