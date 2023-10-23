@@ -92,12 +92,34 @@ Explore this link {fas}`arrow-right`
 
 ## Vamos a creaer el contenedor de la aplicación de backend.
 
+
+### Asegurate de tener instalado Git.
+
+::::{card-carousel} 1
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: https://git-scm.com/downloads
+
+**💬 Instalar Git**
+^^^
+```{image} https://git-scm.com/images/logo@2x.png
+:height: 100
+```
+Install git
++++
+Explore this link {fas}`arrow-right`
+:::
+::::
+
 ### Crear el archivo Dockerfile
 
 ```dockerfile
 
 # Usa una imagen base de Python
-FROM python:3.8-slim-buster
+FROM python:3.10-slim-buster
 
 # Copia los archivos de tu proyecto al contenedor
 COPY . /app
