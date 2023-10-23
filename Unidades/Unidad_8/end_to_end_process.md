@@ -154,12 +154,12 @@ Realice en la herramienta figma los mockups de los casos de uso 3, 4, 5, 6 y 7.
 :link: https://github.com/johanpina/UcaldasBasicBack/tree/main
 **💬 Repositorio de apoyo**
 ^^^
-```{image} https://cdn-icons-png.flaticon.com/512/25/25231.png
+```{image} https://banner2.cleanpng.com/20180331/udw/kisspng-social-media-github-computer-icons-logo-github-5ac0188083c4f5.8572681115225386245397.jpg
 :height: 100
 ```
 
 Repositorio con practica de backend.
 +++
-Explore this book {fas}`arrow-right`
+Explore this repo {fas}`arrow-right`
 :::
 ::::
