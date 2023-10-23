@@ -450,7 +450,30 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion-a-docker">Introducción a Docker</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-la-vitualizacion">¿Qué es la vitualización?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deventajas-de-las-maquinas-virtuales">Deventajas de las máquinas virtuales</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-un-contenedor">¿Qué es un contenedor?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ventajas-de-los-contenedores">Ventajas de los contenedores</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenedores-vs-maquinas-virtuales-vm-s">Contenedores vs máquinas virtuales(VM’s)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docker">Docker</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-docker">Instalación de Docker</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-basicos-de-docker">Comandos básicos de Docker</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vamos-a-creaer-el-contenedor-de-la-aplicacion-de-backend">Vamos a creaer el contenedor de la aplicación de backend.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-el-archivo-dockerfile">Crear el archivo Dockerfile</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-el-archivo-dockerignore">Crear el archivo .dockerignore</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construir-la-imagen-del-contenedor">Construir la imagen del contenedor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejecutar-el-contenedor">Ejecutar el contenedor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verificar-que-el-contenedor-se-esta-ejecutando">Verificar que el contenedor se está ejecutando</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vamos-a-subir-a-github-el-cambio-de-los-archivos-dockerfile-y-dockerignore">Vamos a subir a github el cambio de los archivos Dockerfile y .dockerignore</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -468,8 +491,166 @@ document.write(`
 <h2>Contenido de la unidad<a class="headerlink" href="#contenido-de-la-unidad" title="Permalink to this heading">#</a></h2>
 <img src="_static/images/contenidoU9.png"/>
 </section>
-<section id="espere-aca-el-contenido-de-las-siguientes-versiones">
-<h2>Espere acá el contenido de las siguientes versiones<a class="headerlink" href="#espere-aca-el-contenido-de-las-siguientes-versiones" title="Permalink to this heading">#</a></h2>
+<section id="introduccion-a-docker">
+<h2>Introducción a Docker<a class="headerlink" href="#introduccion-a-docker" title="Permalink to this heading">#</a></h2>
+<p>Docker es una plataforma de código abierto que permite a los desarrolladores y a los administradores de sistemas construir, enviar y ejecutar aplicaciones en contenedores. Estos contenedores son unidades estándar de software que empaquetan el código y todas sus dependencias para que la aplicación se ejecute de manera rápida y confiable desde un entorno a otro.</p>
+<img src="https://1000logos.net/wp-content/uploads/2021/11/Docker-Logo-2013.png"/>
+</section>
+<section id="que-es-la-vitualizacion">
+<h2>¿Qué es la vitualización?<a class="headerlink" href="#que-es-la-vitualizacion" title="Permalink to this heading">#</a></h2>
+<img src="https://novamedia.com.mx/web/wp-content/uploads/2016/01/novamedia-virtualizacion.jpg" />
+<p>La virtualización se refiere a la creación de versiones virtuales de recursos físicos, como servidores, dispositivos de almacenamiento, redes e incluso sistemas operativos. En lugar de interactuar con el hardware físico directamente, los sistemas y aplicaciones interactúan con representaciones virtuales de ese hardware. Esta abstracción permite una mayor flexibilidad, eficiencia y consolidación de recursos.</p>
+<section id="deventajas-de-las-maquinas-virtuales">
+<h3>Deventajas de las máquinas virtuales<a class="headerlink" href="#deventajas-de-las-maquinas-virtuales" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Peso</strong>: El el orden de los GB. Repiten archivos en común. Inicio lento.</p></li>
+<li><p><strong>Costo de la administración</strong>: Necesita mantenimiento igual que otra computadora.</p></li>
+<li><p><strong>Múltiples formatos</strong>: VDI, VMDK, VHD, raw, etc.</p></li>
+</ul>
+</section>
+</section>
+<section id="que-es-un-contenedor">
+<h2>¿Qué es un contenedor?<a class="headerlink" href="#que-es-un-contenedor" title="Permalink to this heading">#</a></h2>
+<p>Un contenedor es una unidad estándar de software que empaqueta el código y todas sus dependencias para que la aplicación se ejecute de manera rápida y confiable desde un entorno de desarrollo a un entorno de producción.</p>
+<img src="https://www.javiergarzas.com/wp-content/uploads/2015/07/docker1.png"/>
+<section id="ventajas-de-los-contenedores">
+<h3>Ventajas de los contenedores<a class="headerlink" href="#ventajas-de-los-contenedores" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Flexibles:</strong> No importa el tipo de aplicación que decidas meter en un contenedor, siempre funcionará igual.</p></li>
+<li><p><strong>Ligeros:</strong> Los contenedores comparten el mismo kernel del sistema operativo y solo ejecutan los procesos que necesitan, por lo que son mucho más ligeros que las máquinas virtuales.</p></li>
+<li><p><strong>Portables:</strong> Puedes construir localmente, desplegar en la nube y ejecutar en cualquier lugar.</p></li>
+<li><p><strong>Escalables:</strong> Puedes aumentar y distribuir automáticamente réplicas de contenedores en función de la demanda.</p></li>
+<li><p><strong>Seguros:</strong> Los contenedores aplican aislamiento de recursos y restricciones de acceso, al tiempo que aprovechan el kernel del host subyacente.</p></li>
+<li><p><strong>Bajo acoplamiento:</strong> Los contenedores están altamente acoplados con el código y las dependencias que contienen, pero están débilmente acoplados con otros contenedores y la infraestructura subyacente.</p></li>
+</ul>
+</section>
+</section>
+<section id="contenedores-vs-maquinas-virtuales-vm-s">
+<h2>Contenedores vs máquinas virtuales(VM’s)<a class="headerlink" href="#contenedores-vs-maquinas-virtuales-vm-s" title="Permalink to this heading">#</a></h2>
+<p>A diferencia de las máquinas virtuales, que virtualizan todo el sistema operativo y el hardware subyacente, los contenedores virtualizan el sistema operativo, compartiendo el mismo núcleo del sistema operativo, pero funcionando en espacios de usuario separados.</p>
+<img src="https://www.itdo.com/blog/content/images/2019/02/comparacion-container-docker_By_0WBFrV.jpg"/>
+</section>
+<section id="docker">
+<h2>Docker<a class="headerlink" href="#docker" title="Permalink to this heading">#</a></h2>
+<p>Docker es una de las plataformas de contenedores más populares y ha jugado un papel fundamental en la popularización de la tecnología de contenedores.</p>
+<section id="instalacion-de-docker">
+<h3>Instalación de Docker<a class="headerlink" href="#instalacion-de-docker" title="Permalink to this heading">#</a></h3>
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-1 docutils">
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>💬 Descargar Docker</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://seeklogo.com/images/D/docker-logo-6D6F987702-seeklogo.com.png"><img alt="https://seeklogo.com/images/D/docker-logo-6D6F987702-seeklogo.com.png" src="https://seeklogo.com/images/D/docker-logo-6D6F987702-seeklogo.com.png" style="height: 100px;" /></a>
+<p class="sd-card-text">Vamos a descargar Docker Desktop para Windows o Mac.
+Crear una cuenta en docker-hub también.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this link <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.docker.com/get-started/"></a></div>
+</div>
+</section>
+<section id="comandos-basicos-de-docker">
+<h3>Comandos básicos de Docker<a class="headerlink" href="#comandos-basicos-de-docker" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>docker version</strong>: Muestra la versión de docker.</p></li>
+<li><p><strong>docker info</strong>: Muestra información del sistema.</p></li>
+<li><p><strong>docker build</strong>: Construye una imagen.</p></li>
+<li><p><strong>docker run</strong>: Ejecuta un contenedor.</p></li>
+<li><p><strong>docker inspect</strong>: Muestra información detallada de un contenedor.</p></li>
+<li><p><strong>docker prune</strong>: Elimina contenedores, imágenes, volúmenes y redes no utilizados.</p></li>
+<li><p><strong>docker ps</strong>: Lista los contenedores que se están ejecutando.</p></li>
+<li><p><strong>docker ps -a</strong>: Lista todos los contenedores.</p></li>
+<li><p><strong>docker stop</strong>: Detiene un contenedor.</p></li>
+<li><p><strong>docker rm</strong>: Elimina un contenedor.</p></li>
+</ul>
+</section>
+</section>
+<section id="vamos-a-creaer-el-contenedor-de-la-aplicacion-de-backend">
+<h2>Vamos a creaer el contenedor de la aplicación de backend.<a class="headerlink" href="#vamos-a-creaer-el-contenedor-de-la-aplicacion-de-backend" title="Permalink to this heading">#</a></h2>
+<section id="crear-el-archivo-dockerfile">
+<h3>Crear el archivo Dockerfile<a class="headerlink" href="#crear-el-archivo-dockerfile" title="Permalink to this heading">#</a></h3>
+<div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="c"># Usa una imagen base de Python</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">python:3.8-slim-buster</span>
+
+<span class="c"># Copia los archivos de tu proyecto al contenedor</span>
+<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>/app
+
+<span class="c"># Cambia al directorio de la aplicación</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+
+<span class="c"># Instala las dependencias</span>
+<span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+
+<span class="c"># Expone el puerto que utilizará FastAPI</span>
+<span class="k">EXPOSE</span><span class="w"> </span><span class="s">8000</span>
+
+<span class="c"># Comando para ejecutar la aplicación</span>
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;uvicorn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;main:app&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--host&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--port&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;8000&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="crear-el-archivo-dockerignore">
+<h3>Crear el archivo .dockerignore<a class="headerlink" href="#crear-el-archivo-dockerignore" title="Permalink to this heading">#</a></h3>
+<div class="highlight-.dockerignore notranslate"><div class="highlight"><pre><span></span>__pycache__/
+.dockerignore
+Dockerfile
+*.pyc
+*.pyo
+*.pyd
+.Python
+db.sqlite3
+*.git
+*.so
+*.DS_Store
+</pre></div>
+</div>
+</section>
+<section id="construir-la-imagen-del-contenedor">
+<h3>Construir la imagen del contenedor<a class="headerlink" href="#construir-la-imagen-del-contenedor" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>backend<span class="w"> </span>.
+</pre></div>
+</div>
+</section>
+<section id="ejecutar-el-contenedor">
+<h3>Ejecutar el contenedor<a class="headerlink" href="#ejecutar-el-contenedor" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>backend<span class="w"> </span>-p<span class="w"> </span>&lt;local_PORT&gt;:&lt;container_PORT&gt;<span class="w"> </span>backend
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>backend<span class="w"> </span>-p<span class="w"> </span><span class="m">8000</span>:8000<span class="w"> </span>backend
+</pre></div>
+</div>
+</section>
+<section id="verificar-que-el-contenedor-se-esta-ejecutando">
+<h3>Verificar que el contenedor se está ejecutando<a class="headerlink" href="#verificar-que-el-contenedor-se-esta-ejecutando" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>ps
+</pre></div>
+</div>
+</section>
+<section id="vamos-a-subir-a-github-el-cambio-de-los-archivos-dockerfile-y-dockerignore">
+<h3>Vamos a subir a github el cambio de los archivos Dockerfile y .dockerignore<a class="headerlink" href="#vamos-a-subir-a-github-el-cambio-de-los-archivos-dockerfile-y-dockerignore" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-am<span class="w"> </span><span class="s2">&quot;Dockerfile and .dockerignore added&quot;</span>
+git<span class="w"> </span>push
+</pre></div>
+</div>
+<p><strong>Ahora vamos a realizar el despliegue de nuestra aplicación apoyados del contenedor en un servidor.</strong></p>
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-1 docutils">
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>💬 Despliegue del contenedor</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://media.licdn.com/dms/image/C560BAQE6AjeKqKMmaQ/company-logo_200_200/0/1675403197765/fl0_logo?e=2147483647&amp;v=beta&amp;t=V2OmE9kvbKuB34qi9NsyezF3WxmOjy-yPUyICYrPugw"><img alt="https://media.licdn.com/dms/image/C560BAQE6AjeKqKMmaQ/company-logo_200_200/0/1675403197765/fl0_logo?e=2147483647&amp;v=beta&amp;t=V2OmE9kvbKuB34qi9NsyezF3WxmOjy-yPUyICYrPugw" src="https://media.licdn.com/dms/image/C560BAQE6AjeKqKMmaQ/company-logo_200_200/0/1675403197765/fl0_logo?e=2147483647&amp;v=beta&amp;t=V2OmE9kvbKuB34qi9NsyezF3WxmOjy-yPUyICYrPugw" style="height: 100px;" /></a>
+<p class="sd-card-text">Deploy backend applications and databases in minutes.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this link <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.fl0.com/"></a></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -541,7 +722,30 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion-a-docker">Introducción a Docker</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-la-vitualizacion">¿Qué es la vitualización?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deventajas-de-las-maquinas-virtuales">Deventajas de las máquinas virtuales</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-un-contenedor">¿Qué es un contenedor?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ventajas-de-los-contenedores">Ventajas de los contenedores</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenedores-vs-maquinas-virtuales-vm-s">Contenedores vs máquinas virtuales(VM’s)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docker">Docker</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-docker">Instalación de Docker</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comandos-basicos-de-docker">Comandos básicos de Docker</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vamos-a-creaer-el-contenedor-de-la-aplicacion-de-backend">Vamos a creaer el contenedor de la aplicación de backend.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-el-archivo-dockerfile">Crear el archivo Dockerfile</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-el-archivo-dockerignore">Crear el archivo .dockerignore</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construir-la-imagen-del-contenedor">Construir la imagen del contenedor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejecutar-el-contenedor">Ejecutar el contenedor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verificar-que-el-contenedor-se-esta-ejecutando">Verificar que el contenedor se está ejecutando</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vamos-a-subir-a-github-el-cambio-de-los-archivos-dockerfile-y-dockerignore">Vamos a subir a github el cambio de los archivos Dockerfile y .dockerignore</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
