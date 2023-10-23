@@ -466,6 +466,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vamos-a-creaer-el-contenedor-de-la-aplicacion-de-backend">Vamos a creaer el contenedor de la aplicación de backend.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#asegurate-de-tener-instalado-git">Asegurate de tener instalado Git.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-el-archivo-dockerfile">Crear el archivo Dockerfile</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-el-archivo-dockerignore">Crear el archivo .dockerignore</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construir-la-imagen-del-contenedor">Construir la imagen del contenedor</a></li>
@@ -569,10 +570,27 @@ Crear una cuenta en docker-hub también.</p>
 </section>
 <section id="vamos-a-creaer-el-contenedor-de-la-aplicacion-de-backend">
 <h2>Vamos a creaer el contenedor de la aplicación de backend.<a class="headerlink" href="#vamos-a-creaer-el-contenedor-de-la-aplicacion-de-backend" title="Permalink to this heading">#</a></h2>
+<section id="asegurate-de-tener-instalado-git">
+<h3>Asegurate de tener instalado Git.<a class="headerlink" href="#asegurate-de-tener-instalado-git" title="Permalink to this heading">#</a></h3>
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-1 docutils">
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>💬 Instalar Git</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://git-scm.com/images/logo&#64;2x.png"><img alt="https://git-scm.com/images/logo&#64;2x.png" src="https://git-scm.com/images/logo&#64;2x.png" style="height: 100px;" /></a>
+<p class="sd-card-text">Install git</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this link <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://git-scm.com/downloads"></a></div>
+</div>
+</section>
 <section id="crear-el-archivo-dockerfile">
 <h3>Crear el archivo Dockerfile<a class="headerlink" href="#crear-el-archivo-dockerfile" title="Permalink to this heading">#</a></h3>
 <div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="c"># Usa una imagen base de Python</span>
-<span class="k">FROM</span><span class="w"> </span><span class="s">python:3.8-slim-buster</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">python:3.10-slim-buster</span>
 
 <span class="c"># Copia los archivos de tu proyecto al contenedor</span>
 <span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>/app
@@ -738,6 +756,7 @@ git<span class="w"> </span>push
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vamos-a-creaer-el-contenedor-de-la-aplicacion-de-backend">Vamos a creaer el contenedor de la aplicación de backend.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#asegurate-de-tener-instalado-git">Asegurate de tener instalado Git.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-el-archivo-dockerfile">Crear el archivo Dockerfile</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-el-archivo-dockerignore">Crear el archivo .dockerignore</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construir-la-imagen-del-contenedor">Construir la imagen del contenedor</a></li>
