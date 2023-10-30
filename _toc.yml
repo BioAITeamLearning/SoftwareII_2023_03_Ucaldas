@@ -48,6 +48,10 @@ chapters:
     - file: "Unidades/Unidad_8/end_to_end_process"
 - file: Unidad9
 - file: Unidad10
+  sections:
+    - file: "Unidades/Unidad_10/PatronesArquitectonicos"
+    - file: "Unidades/Unidad_10/DiagramasDePaquetesDespliegue"
+    - file: "Unidades/Unidad_10/GithubPro_howToObtain"
 - file: Unidad11
 - file: Unidad12
 - file: Unidad13
