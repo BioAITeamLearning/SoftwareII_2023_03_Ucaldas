@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Unidad 10: Arquitectura y patrones &#8212; Desarrollo de Software II 2023 - 03</title>
+    <title>Unidad 10: Diseño de arquitectura y patrones &#8212; Desarrollo de Software II 2023 - 03</title>
   
   
   
@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Unidad10';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Unidad 11: Técnicas de despliegue" href="Unidad11.html" />
+    <link rel="next" title="Patrones Arquitectónicos" href="Unidades/Unidad_10/PatronesArquitectonicos.html" />
     <link rel="prev" title="Unidad 9: Herramientas para desarrollo y gestión de proyectos de software" href="Unidad9.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -252,7 +252,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad9.html">Unidad 9: Herramientas para desarrollo y gestión de proyectos de software</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unidad 10: Arquitectura y patrones</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Unidad 10: Diseño de arquitectura y patrones</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_10/PatronesArquitectonicos.html">Patrones Arquitectónicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_10/DiagramasDePaquetesDespliegue.html">Diagramas de paquetes y despliegue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_10/GithubPro_howToObtain.html">Github Pro</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad11.html">Unidad 11: Técnicas de despliegue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad12.html">Unidad 12: Implementación, integración y pruebas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad13.html">Unidad 13: Computación en la nube</a></li>
@@ -439,7 +444,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Unidad 10: Arquitectura y patrones</h1>
+    <h1>Unidad 10: Diseño de arquitectura y patrones</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -450,7 +455,15 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diseno-de-software">Diseño de software</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#niveles-de-abstraccion">Niveles de abstracción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vision-general-del-proceso">Visión general del proceso</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diseno-de-software-modelos-de-diseno-detallado">Diseño de software: Modelos de diseño detallado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aspectos-a-considerar-en-el-diseno-de-software">Aspectos a considerar en el diseño de software</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#patrones-y-estlos-arquitectonicos">Patrones y estlos arquitectónicos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classificacion-de-los-patrones-arquitectonicos">Classificación de los patrones arquitectónicos</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -462,15 +475,105 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="unidad-10-arquitectura-y-patrones">
-<h1>Unidad 10: Arquitectura y patrones<a class="headerlink" href="#unidad-10-arquitectura-y-patrones" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="unidad-10-diseno-de-arquitectura-y-patrones">
+<h1>Unidad 10: Diseño de arquitectura y patrones<a class="headerlink" href="#unidad-10-diseno-de-arquitectura-y-patrones" title="Permalink to this heading">#</a></h1>
 <section id="contenido-de-la-unidad">
 <h2>Contenido de la unidad<a class="headerlink" href="#contenido-de-la-unidad" title="Permalink to this heading">#</a></h2>
 <img src="_static/images/contenidoU10.png"/>
+<hr class="docutils" />
+<p>Cuando hablamos de diseño de arquitectura y patrones arquitectónicos, estamos refiriéndonos a la estructura y organización de un sistema, y cómo las diferentes partes de ese sistema interactúan entre sí.</p>
 </section>
-<section id="espere-aca-el-contenido-de-las-siguientes-versiones">
-<h2>Espere acá el contenido de las siguientes versiones<a class="headerlink" href="#espere-aca-el-contenido-de-las-siguientes-versiones" title="Permalink to this heading">#</a></h2>
+<section id="diseno-de-software">
+<h2>Diseño de software<a class="headerlink" href="#diseno-de-software" title="Permalink to this heading">#</a></h2>
+<p>La esencia del diseño de software es la toma de decisiones sobre la organización lógica de los elementos que conforman el software.</p>
+<section id="niveles-de-abstraccion">
+<h3>Niveles de abstracción<a class="headerlink" href="#niveles-de-abstraccion" title="Permalink to this heading">#</a></h3>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 text-center docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-1 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light docutils">
+<p class="sd-card-text"><strong>Nivel de abstracción de alto nivel (arquitectónico)🏗️</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Se refiere a la organización de los componentes de un sistema en términos de módulos o subsistemas, partiendo de la especificación de requistos.</p>
+</div>
+<a class="sd-stretched-link reference internal" href="Unidad1.html"><span class="doc"></span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light docutils">
+<p class="sd-card-text"><strong>Nivel de abstracción de bajo nivel (diseño detallado)✏️</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Se refiere a la organización de los componentes de un módulo o subsistema en términos de clases y objetos.</p>
+</div>
+<a class="sd-stretched-link reference internal" href="Unidad2.html"><span class="doc"></span></a></div>
+</div>
+</div>
+</div>
 </section>
+<section id="vision-general-del-proceso">
+<h3>Visión general del proceso<a class="headerlink" href="#vision-general-del-proceso" title="Permalink to this heading">#</a></h3>
+<img src="_static/images/ProcesoDiseno.png"/>
+</section>
+<section id="diseno-de-software-modelos-de-diseno-detallado">
+<h3>Diseño de software: Modelos de diseño detallado<a class="headerlink" href="#diseno-de-software-modelos-de-diseno-detallado" title="Permalink to this heading">#</a></h3>
+<img src="_static/images/ModelosDiseno.png"/>
+</section>
+<section id="aspectos-a-considerar-en-el-diseno-de-software">
+<h3>Aspectos a considerar en el diseño de software<a class="headerlink" href="#aspectos-a-considerar-en-el-diseno-de-software" title="Permalink to this heading">#</a></h3>
+ <img src="_static/images/AspectosDiseno.png"/>
+</section>
+<section id="patrones-y-estlos-arquitectonicos">
+<h3>Patrones y estlos arquitectónicos<a class="headerlink" href="#patrones-y-estlos-arquitectonicos" title="Permalink to this heading">#</a></h3>
+<p><strong><strong>Todos los patrones son estilos arquitectónicos. Pero no todos los estilos son patrones arquitectónicos.</strong></strong></p>
+<img src="https://img.freepik.com/vector-premium/dos-hemisferios-cerebro-formados-lineas-colores-creatividad-pensamiento_565470-1498.jpg?w=2000"/>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body text-right docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Patron<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Es una <strong>solución general</strong> y <strong>reutilizable</strong> a un problema que ocurre en un <strong>contexto particular</strong>. Es una solución recurrente a un problema recurrente.</p>
+</div>
+</details></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body text-right docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Estilo<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Es un nombre dado a un diseño arquitectónico recurrente. No existe para resolver un problema.</p>
+</div>
+</details></div>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Los <strong>patrones arquitectónicos</strong> son soluciones más concretas y específicas a problemas comunes en la arquitectura de software, mientras que los <strong>estilos arquitectónicos</strong> son descripciones más generales de cómo se pueden organizar y estructurar los sistemas de software.</p>
+</div>
+</section>
+<section id="classificacion-de-los-patrones-arquitectonicos">
+<h3>Classificación de los patrones arquitectónicos<a class="headerlink" href="#classificacion-de-los-patrones-arquitectonicos" title="Permalink to this heading">#</a></h3>
+<img src="_static/images/ClasificacionPatrones.png"/></section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -514,11 +617,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="Unidad11.html"
+       href="Unidades/Unidad_10/PatronesArquitectonicos.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unidad 11: Técnicas de despliegue</p>
+        <p class="prev-next-title">Patrones Arquitectónicos</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -541,7 +644,15 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diseno-de-software">Diseño de software</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#niveles-de-abstraccion">Niveles de abstracción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vision-general-del-proceso">Visión general del proceso</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diseno-de-software-modelos-de-diseno-detallado">Diseño de software: Modelos de diseño detallado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aspectos-a-considerar-en-el-diseno-de-software">Aspectos a considerar en el diseño de software</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#patrones-y-estlos-arquitectonicos">Patrones y estlos arquitectónicos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classificacion-de-los-patrones-arquitectonicos">Classificación de los patrones arquitectónicos</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
