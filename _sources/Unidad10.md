@@ -61,7 +61,7 @@ Se refiere a la organización de los componentes de un módulo o subsistema en t
 
 
 
- ### Patrones y estlos arquitectónicos
+ ### Patrones y estilos arquitectónicos
 
 __**Todos los patrones son estilos arquitectónicos. Pero no todos los estilos son patrones arquitectónicos.**__
 
