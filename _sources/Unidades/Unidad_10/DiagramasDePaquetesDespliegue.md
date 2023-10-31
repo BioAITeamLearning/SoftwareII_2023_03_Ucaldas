@@ -134,7 +134,7 @@ Se utilizan los diagramas de despliegue para modelar:
 
 1. Sistemas Empotrados (embebidos)
 2. Sistemas cliente-servidor
-3. Sistemas completamente distribuidos
+3. Sistemas completamente distribuidos.
 
 <img src="../../_static/images/despliegue3.png"/>
 
