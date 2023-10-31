@@ -99,6 +99,7 @@ Finalmente, realizamos la asociación de los actores con los respectivos paquete
 <img src="../../_static/images/solucionDiagramas3.png"/>
 
 ::::
+
 ---
 
 ## Diagramas de Despliegue

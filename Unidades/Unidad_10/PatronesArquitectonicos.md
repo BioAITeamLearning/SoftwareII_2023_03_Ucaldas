@@ -82,7 +82,7 @@ Divide una aplicación en múltiples componentes pequeños, independientes y fá
 
 ## Patrón Arquitectónico: Modelo Vista-Controlador
 
-Los componentes de la interfaz gráfica es la parte que se modifica con mayor frecuencia. Este patrón busca mantener estos cambios separados del resto del sistema.
+Los componentes de la interfaz gráfica es la parte que se modifica con mayor frecuencia. Este patrón busca mantener estos cambios separados del resto del sistema. Mientras que MVC se centra en la separación de responsabilidades en la capa de presentación de una aplicación, la arquitectura de 3 capas aborda una separación más general de las preocupaciones en la aplicación en tres capas diferentes, lo que permite una mayor modularidad y reutilización del código.
 
 <img src="../../_static/images/mvc1.png"/>
 
