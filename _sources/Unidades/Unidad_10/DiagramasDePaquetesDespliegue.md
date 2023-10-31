@@ -75,7 +75,7 @@ Su tarea es crear un diagrama de paquetes UML para representar la organización 
 
 Identifiquemos  los principales paquetes y los actores involucrados:
 
-<img src="../../_static/images/solucionDiagramas.png"/>
+<img src="../../_static/images/cuadro1.png"/>
 
 ::::
 
@@ -96,7 +96,7 @@ Luego, diseñamos los paquetes y los subpaquetes que se establecen en la tabla y
 ::::{dropdown} Solución: Paquetes
 Finalmente, realizamos la asociación de los actores con los respectivos paquetes
 
-<img src="../../_static/images/solucionDiagramas3.png"/>
+<img src="../../_static/images/ultimasol.png"/>
 
 ::::
 
