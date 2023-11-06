@@ -91,7 +91,7 @@ Este tipo de representaciones visuales pueden ser muy variadas, desde un simple 
 
 ## Veamos como funciona Balsamiq
 
-<img src="_static/images/balsamiq.png"/>
+<img src="_static/images/Balsamiq.png"/>
 
 
 ## 🌐 Enlaces extra
