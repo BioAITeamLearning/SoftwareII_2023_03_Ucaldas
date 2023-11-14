@@ -127,7 +127,7 @@ Cuando se trata de software, los cambios son casi inevitables. Es posible que su
 
 
 
-La documentación adecuada en estos tipos clave es esencial para un desarrollo de software exitoso en equipos, ya que mejora la comunicación, la colaboración y la comprensión del proyecto en todos los niveles. Cada tipo de documentación tiene su propio propósito y contribuye al ciclo de vida del desarrollo de software.
+La documentación adecuada en estos tipos es esencial para un desarrollo de software exitoso en equipos, ya que mejora la comunicación, la colaboración y la comprensión del proyecto en todos los niveles. Cada tipo de documentación tiene su propio propósito y contribuye al ciclo de vida del desarrollo de software.
 
 ---
 
@@ -362,6 +362,24 @@ Son tipos de convenciones de nomenclatura utilizadas en la programación para no
 
 Realizar la documentación del repositorio del sistema de login que se encuentra en el siguiente enlace:
 
-enlace
 
-Realice toda la documentación del código usando el mismo estilo.
+::::{card-carousel} 1
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: https://github.com/johanpina/UcaldasBasicBack/tree/main
+**💬 Repositorio de apoyo**
+^^^
+```{image} https://banner2.cleanpng.com/20180331/udw/kisspng-social-media-github-computer-icons-logo-github-5ac0188083c4f5.8572681115225386245397.jpg
+:height: 100
+```
+
+Repositorio con practica de backend.
++++
+Explore this repo {fas}`arrow-right`
+:::
+::::
+
+Realice toda la documentación del código usando el mismo tipo de docstring y el mismo estilo de tipado (snake_case, camelCase o PascalCase).
