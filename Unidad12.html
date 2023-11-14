@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Unidad12';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Unidad 13: Computación en la nube" href="Unidad13.html" />
+    <link rel="next" title="Testing de Software" href="Unidades/Unidad_12/testing.html" />
     <link rel="prev" title="Unidad 11: Técnicas de despliegue" href="Unidad11.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -261,6 +261,9 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Unidad11.html">Unidad 11: Técnicas de despliegue</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Unidad 12: Implementación, integración y pruebas</a></li>
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="Unidad13.html">Unidad 13: Computación en la nube</a></li>
 </ul>
 
@@ -455,9 +458,46 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Unidad 12: Implementación, integración y pruebas</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-software">Documentación de software.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-documentacion-de-software">Tipos de documentación de software</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-requerimientos-requirements-documentation">Documentación de Requerimientos (Requirements Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-diseno-design-documentation">Documentación de Diseño (Design Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-codigo-code-documentation">Documentación de Código (Code Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-pruebas-testing-documentation">Documentación de Pruebas (Testing Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-proyecto-project-documentation">Documentación de Proyecto (Project Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-configuracion-configuration-documentation">Documentación de Configuración (Configuration Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-despliegue-deployment-documentation">Documentación de Despliegue (Deployment Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-usuarios-user-documentation">Documentación de Usuarios (User Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-api-api-documentation">Documentación de API (API Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-mantenimiento-maintenance-documentation">Documentación de Mantenimiento (Maintenance Documentation):</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#veamos-la-documentacion-de-codigo">Veamos la documentación de código</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docstrings">Docstrings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diferentes-modelos-de-docstrings">Diferentes modelos de docstrings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#estandares-de-codificacion">Estándares de codificación</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-son-importantes-los-estandares-de-codificacion">¿Por qué son importantes los estándares de codificación?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-incluyen-los-estandares-de-codificacion">¿Qué incluyen los estándares de codificación?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-estandar-pep">El estándar PEP</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#snake-case-vs-camelcase-y-pascalcase">snake_case vs. camelCase y PascalCase</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#snake-case">snake_case</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#camelcase">camelCase</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pascalcase">PascalCase</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad">Actividad</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -474,9 +514,364 @@ document.write(`
 <h2>Contenido de la unidad<a class="headerlink" href="#contenido-de-la-unidad" title="Permalink to this heading">#</a></h2>
 <img src="_static/images/contenidoU12.png"/>
 </section>
-<section id="espere-aca-el-contenido-de-las-siguientes-versiones">
-<h2>Espere acá el contenido de las siguientes versiones<a class="headerlink" href="#espere-aca-el-contenido-de-las-siguientes-versiones" title="Permalink to this heading">#</a></h2>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="documentacion-de-software">
+<h1>Documentación de software.<a class="headerlink" href="#documentacion-de-software" title="Permalink to this heading">#</a></h1>
+<p>La documentación de software es uno de los aspectos fundamentales del proceso de desarrollo de software. La documentación técnica adecuada hará que la información sea de fácil acceso y también reducirá la curva de aprendizaje.</p>
+<p>Cuando se trata de software, los cambios son casi inevitables. Es posible que su software deba experimentar numerosos cambios debido al entorno empresarial en cambio constante. Una sólida herramienta de documentación de software le permite realizar las modificaciones necesarias en su software sin grandes complicaciones.</p>
+<img src="_static/images/Desafios.png"/>
+<section id="tipos-de-documentacion-de-software">
+<h2>Tipos de documentación de software<a class="headerlink" href="#tipos-de-documentacion-de-software" title="Permalink to this heading">#</a></h2>
+<section id="documentacion-de-requerimientos-requirements-documentation">
+<h3>Documentación de Requerimientos (Requirements Documentation):<a class="headerlink" href="#documentacion-de-requerimientos-requirements-documentation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Captura y describe los requisitos funcionales y no funcionales del software. Define qué debe hacer el sistema y qué criterios debe cumplir.</p></li>
+<li><p><strong>Contenido:</strong> Casos de uso, historias de usuario, especificaciones técnicas, diagramas de flujo, y cualquier otra información relevante sobre los requisitos.</p></li>
+</ul>
+<p align="center">
+<img src="https://2.bp.blogspot.com/-EK0vwSuTrG4/V6Cyjmp69eI/AAAAAAAAEY8/RMD-TkVGqEs9c5hvp5hqFrW-w2oUYdgjgCLcB/s1600/7%2BTecnicas%2Bde%2Blevantamiento%2Bde%2Brequerimientos%2Bde%2Bsoftware.jpg" />
+</p>
+</section>
+<hr class="docutils" />
+<section id="documentacion-de-diseno-design-documentation">
+<h3>Documentación de Diseño (Design Documentation):<a class="headerlink" href="#documentacion-de-diseno-design-documentation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Detalla la arquitectura y el diseño del sistema. Permite que los desarrolladores comprendan cómo se estructurará el software antes de la implementación.</p></li>
+<li><p><strong>Contenido:</strong> Diagramas de arquitectura, diagramas de clases, diagramas de secuencia, diseño de bases de datos, y cualquier otra representación visual o descripción detallada del diseño.</p></li>
+</ul>
+<p align="center">
+<img src="https://cdn-cashy-static-assets.lucidchart.com/marketing/blog/2020Q4/software-design-documents/software-design-documents.png"/>
+</p>
+</section>
+<hr class="docutils" />
+<section id="documentacion-de-codigo-code-documentation">
+<h3>Documentación de Código (Code Documentation):<a class="headerlink" href="#documentacion-de-codigo-code-documentation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Facilita la comprensión del código fuente. Incluye comentarios en el código y documentación generada automáticamente.</p></li>
+<li><p><strong>Contenido:</strong> Comentarios en el código explicando su funcionamiento, documentación de funciones y clases, y uso de herramientas como Javadoc, Doxygen o Sphinx.</p></li>
+</ul>
+<p align="center">
+<img src="https://qph.cf2.quoracdn.net/main-qimg-a4cd9010847da5bf5b3d964d960881ee-lq"/>
+</p>
+</section>
+<hr class="docutils" />
+<section id="documentacion-de-pruebas-testing-documentation">
+<h3>Documentación de Pruebas (Testing Documentation):<a class="headerlink" href="#documentacion-de-pruebas-testing-documentation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Describe los planes de pruebas, casos de pruebas, resultados y evidencia de pruebas realizadas en el software.</p></li>
+<li><p><strong>Contenido:</strong> Plan de pruebas, casos de pruebas, resultados de pruebas, informes de errores, evidencia de pruebas automatizadas, y documentación de cobertura de pruebas.</p></li>
+</ul>
+<p align="center">
+<img src="https://ds6br8f5qp1u2.cloudfront.net/blog/wp-content/uploads/2021/03/7-Common-Types-of-Software-Testing@1x.png?x40138"/>
+</p>
+</section>
+<hr class="docutils" />
+<section id="documentacion-de-proyecto-project-documentation">
+<h3>Documentación de Proyecto (Project Documentation):<a class="headerlink" href="#documentacion-de-proyecto-project-documentation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Ofrece una visión general del proyecto, incluyendo el alcance, los objetivos, el cronograma y los recursos involucrados.</p></li>
+<li><p><strong>Contenido:</strong> Plan de proyecto, diagramas de Gantt, lista de tareas, presupuesto, y cualquier documento relacionado con la gestión del proyecto.</p></li>
+</ul>
+<p align="center">
+<img src="https://www.esan.edu.pe/images/blog/2014/12/15/informe-direccion-proyectos-plan.jpg"/>
+</p>
+</section>
+<hr class="docutils" />
+<section id="documentacion-de-configuracion-configuration-documentation">
+<h3>Documentación de Configuración (Configuration Documentation):<a class="headerlink" href="#documentacion-de-configuracion-configuration-documentation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Registra las configuraciones del entorno de desarrollo, como bibliotecas, versiones de software y dependencias.</p></li>
+<li><p><strong>Contenido:</strong> Listas de bibliotecas y versiones, instrucciones de instalación y configuración, y detalles sobre el entorno de desarrollo.</p></li>
+</ul>
+<p align="center">
+<img src="https://img.freepik.com/vector-premium/icono-archivo-configuracion-computadora-simbolo-documentos-color_53562-18588.jpg"/>
+</p>
+</section>
+<hr class="docutils" />
+<section id="documentacion-de-despliegue-deployment-documentation">
+<h3>Documentación de Despliegue (Deployment Documentation):<a class="headerlink" href="#documentacion-de-despliegue-deployment-documentation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Describe cómo implementar el software en un entorno de producción, incluyendo la configuración y los pasos necesarios.</p></li>
+<li><p><strong>Contenido:</strong> Instrucciones de implementación, configuración de servidores, scripts de despliegue y cualquier detalle relacionado con el despliegue.</p></li>
+</ul>
+<p align="center">
+<img src="https://images.edrawsoft.com/articles/deployment-diagram-example/12-deployment-diagram.png"/>
+</p>
+</section>
+<hr class="docutils" />
+<section id="documentacion-de-usuarios-user-documentation">
+<h3>Documentación de Usuarios (User Documentation):<a class="headerlink" href="#documentacion-de-usuarios-user-documentation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Orienta a los usuarios finales sobre cómo utilizar el software. Proporciona manuales de usuario y materiales de capacitación.</p></li>
+<li><p><strong>Contenido:</strong> Manuales de usuario, guías de inicio rápido, tutoriales, y cualquier recurso destinado a los usuarios finales.</p></li>
+</ul>
+<p align="center">
+<img src="https://d1q3gj91a17lu.cloudfront.net/wp-content/uploads/2023/05/04121155/9712779_4155601-576x576.jpg"/>
+</p>
+</section>
+<hr class="docutils" />
+<section id="documentacion-de-api-api-documentation">
+<h3>Documentación de API (API Documentation):<a class="headerlink" href="#documentacion-de-api-api-documentation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Describe cómo interactuar con las API del software, incluyendo detalles de rutas, parámetros y respuestas esperadas.</p></li>
+<li><p><strong>Contenido:</strong> Descripciones de API, ejemplos de solicitudes y respuestas, documentación de autenticación, y ejemplos de código.</p></li>
+</ul>
+<p align="center">
+<img src="https://miro.medium.com/v2/resize:fit:1358/1*pk3ksi4l21O25Zlp51fXgQ.png"/>
+</p>
+</section>
+<hr class="docutils" />
+<section id="documentacion-de-mantenimiento-maintenance-documentation">
+<h3>Documentación de Mantenimiento (Maintenance Documentation):<a class="headerlink" href="#documentacion-de-mantenimiento-maintenance-documentation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Facilita el mantenimiento del software a lo largo del tiempo. Incluye información sobre actualizaciones, parches y cambios.</p></li>
+<li><p><strong>Contenido:</strong> Registro de cambios, notas de versión, instrucciones de actualización y cualquier información relevante para el mantenimiento continuo.</p></li>
+</ul>
+<p align="center">
+<img src="https://cuatroceros.cl/wp-content/uploads/2023/07/image-21_606x606-1.png"/>
+</p>
+<p>La documentación adecuada en estos tipos clave es esencial para un desarrollo de software exitoso en equipos, ya que mejora la comunicación, la colaboración y la comprensión del proyecto en todos los niveles. Cada tipo de documentación tiene su propio propósito y contribuye al ciclo de vida del desarrollo de software.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="veamos-la-documentacion-de-codigo">
+<h2>Veamos la documentación de código<a class="headerlink" href="#veamos-la-documentacion-de-codigo" title="Permalink to this heading">#</a></h2>
+<section id="docstrings">
+<h3>Docstrings<a class="headerlink" href="#docstrings" title="Permalink to this heading">#</a></h3>
+<p>Los docstrings son cadenas de texto que se encuentran en el código fuente de un programa. Se utilizan para documentar el código y se pueden extraer automáticamente para generar documentación de API.</p>
+</section>
+<section id="diferentes-modelos-de-docstrings">
+<h3>Diferentes modelos de docstrings<a class="headerlink" href="#diferentes-modelos-de-docstrings" title="Permalink to this heading">#</a></h3>
+<p>Existen diferentes modelos de docstrings, como Google, Numpy, Sphinx, entre otros. Cada modelo tiene su propio formato y convenciones.</p>
+<ol class="arabic simple">
+<li><p><strong>Google</strong></p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calculate_area</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the area of a rectangle.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        length (float): The length of the rectangle.</span>
+<span class="sd">        width (float): The width of the rectangle.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        float: The area of the rectangle.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        &gt;&gt;&gt; calculate_area(5, 3)</span>
+<span class="sd">        15.0</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span>
+
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Numpy</strong></p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calculate_area</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the area of a rectangle.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    length : float</span>
+<span class="sd">        The length of the rectangle.</span>
+<span class="sd">    width : float</span>
+<span class="sd">        The width of the rectangle.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        The area of the rectangle.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; calculate_area(5, 3)</span>
+<span class="sd">    15.0</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span>
+
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p><strong>Sphinx</strong></p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calculate_area</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the area of a rectangle.</span>
+
+<span class="sd">    :param length: The length of the rectangle.</span>
+<span class="sd">    :type length: float</span>
+<span class="sd">    :param width: The width of the rectangle.</span>
+<span class="sd">    :type width: float</span>
+<span class="sd">    :returns: The area of the rectangle.</span>
+<span class="sd">    :rtype: float</span>
+<span class="sd">    :Example:</span>
+<span class="sd">        &gt;&gt;&gt; calculate_area(5, 3)</span>
+<span class="sd">        15.0</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span>
+
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="estandares-de-codificacion">
+<h1>Estándares de codificación<a class="headerlink" href="#estandares-de-codificacion" title="Permalink to this heading">#</a></h1>
+<p>Los estándares de codificación son un conjunto de reglas y pautas que se utilizan al escribir el código fuente de un programa. Estas reglas y pautas ayudan a mejorar la legibilidad del código y facilitan el mantenimiento del software.</p>
+<img src="https://miro.medium.com/v2/resize:fit:700/1*2br-1pzP1spXbFxFNzBH7g.jpeg"/>  
+<hr class="docutils" />
+<section id="por-que-son-importantes-los-estandares-de-codificacion">
+<h2>¿Por qué son importantes los estándares de codificación?<a class="headerlink" href="#por-que-son-importantes-los-estandares-de-codificacion" title="Permalink to this heading">#</a></h2>
+<p>Los estándares de codificación son importantes porque:</p>
+<ul class="simple">
+<li><p>Mejoran la legibilidad del código.</p></li>
+<li><p>Facilitan el mantenimiento del software.</p></li>
+<li><p>Mejoran la calidad del código.</p></li>
+<li><p>Facilitan la colaboración entre desarrolladores.</p></li>
+<li><p>Mejoran la eficiencia del desarrollo de software.</p></li>
+<li><p>Reducen los costos de desarrollo de software.</p></li>
+<li><p>Mejoran la compatibilidad del software.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="que-incluyen-los-estandares-de-codificacion">
+<h2>¿Qué incluyen los estándares de codificación?<a class="headerlink" href="#que-incluyen-los-estandares-de-codificacion" title="Permalink to this heading">#</a></h2>
+<p>Los estándares de codificación incluyen reglas y pautas sobre:</p>
+<ul class="simple">
+<li><p><strong>Nombres de variables</strong></p></li>
+<li><p><strong>Nombres de funciones</strong></p></li>
+<li><p><strong>Nombres de clases</strong></p></li>
+<li><p><strong>Nombres de métodos</strong></p></li>
+<li><p><strong>Nombres de paquetes</strong></p></li>
+<li><p><strong>Nombres de módulos</strong></p></li>
+<li><p><strong>Nombres de archivos</strong></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="el-estandar-pep">
+<h2>El estándar PEP<a class="headerlink" href="#el-estandar-pep" title="Permalink to this heading">#</a></h2>
+<p>Los Estándares de Código en Python, también conocidos como PEP (Python Enhancement Proposal), son documentos que establecen reglas y guías para la escritura de código Python consistente y legible. Estos estándares son ampliamente aceptados en la comunidad de Python y contribuyen a la calidad y la coherencia del código en proyectos Python. A continuación, te presento algunos de los PEP más importantes relacionados con estándares de código en Python:</p>
+<ol class="arabic simple">
+<li><p><strong>PEP 8: Guía de Estilo para Código Python:</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Define las convenciones de estilo para la escritura de código Python, incluyendo reglas sobre indentación, espacios en blanco, nombres de variables, comentarios y más.</p></li>
+<li><p><strong>Ejemplo:</strong> El ejemplo de PEP 8 que mencioné anteriormente describe las reglas de estilo para Python.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<span class="k">def</span> <span class="nf">print_square</span><span class="p">(</span><span class="n">side_length</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Print a square pattern of asterisks.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        side_length (int): The length of each side of the square.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">side_length</span><span class="p">):</span>
+        <span class="c1"># Utiliza espacios en blanco de manera consistente alrededor de operadores.</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;* &quot;</span> <span class="o">*</span> <span class="n">side_length</span><span class="p">)</span>  <span class="c1"># Incluye un espacio después de &quot;*&quot;.</span>
+
+<span class="c1"># Organiza los imports de manera ordenada y con líneas en blanco entre grupos de imports.</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>PEP 20: El Zen de Python:</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Resume los principios de diseño y filosofía de Python. Proporciona una guía general sobre cómo escribir código Python de forma clara y legible.</p></li>
+<li><p><strong>Ejemplo:</strong> “La legibilidad cuenta.” es uno de los principios del Zen de Python.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<span class="c1"># 1. Legibilidad cuenta.</span>
+<span class="c1">#    Es importante que el código sea fácil de leer y entender.</span>
+
+<span class="k">def</span> <span class="nf">calculate_average</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the average of a list of numbers.</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        numbers (list): A list of numeric values.</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        float: The average value.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mf">0.0</span>  <span class="c1"># 2. Los errores nunca deberían pasar en silencio.</span>
+
+    <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+
+    <span class="c1"># 3. A menos que seas explícitamente silenciado.</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="n">count</span>
+    <span class="k">except</span> <span class="ne">ZeroDivisionError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Can&#39;t divide by zero&quot;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">e</span>
+
+    <span class="c1"># 4. En cara a la ambigüedad, rechaza la tentación de adivinar.</span>
+    <span class="k">return</span> <span class="nb">round</span><span class="p">(</span><span class="n">average</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># 5. Debería haber una - y preferiblemente solo una - manera obvia de hacerlo.</span>
+
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p><strong>PEP 257: Docstring Conventions:</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Define las convenciones para escribir docstrings en Python. Proporciona reglas sobre el formato y el contenido de los docstrings.</p></li>
+<li><p><strong>Ejemplo:</strong> El ejemplo de docstring que mencioné anteriormente describe las reglas para escribir docstrings en Python.</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p><strong>PEP 484: Type Hints:</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Define las convenciones para agregar anotaciones de tipo a Python. Proporciona reglas sobre cómo especificar tipos en Python.</p></li>
+<li><p><strong>Ejemplo:</strong></p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>Seguir estos estándares contribuye a la legibilidad, la coherencia y la calidad del código Python, lo que facilita la colaboración en proyectos y el mantenimiento a largo plazo.</p>
+</section>
+<section id="snake-case-vs-camelcase-y-pascalcase">
+<h2>snake_case vs. camelCase y PascalCase<a class="headerlink" href="#snake-case-vs-camelcase-y-pascalcase" title="Permalink to this heading">#</a></h2>
+<p>Son tipos de convenciones de nomenclatura utilizadas en la programación para nombrar variables, funciones, clases y otros elementos del código. Estas convenciones determinan cómo se deben escribir y formatear los nombres de identificadores en un lenguaje de programación.</p>
+<section id="snake-case">
+<h3>snake_case<a class="headerlink" href="#snake-case" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Escribir palabras en minúsculas y separarlas con guiones bajos.</p></li>
+<li><p><strong>Ejemplo:</strong> <code class="docutils literal notranslate"><span class="pre">calculate_average</span></code>, <code class="docutils literal notranslate"><span class="pre">print_square</span></code>, <code class="docutils literal notranslate"><span class="pre">side_length</span></code>.</p></li>
+</ul>
+</section>
+<section id="camelcase">
+<h3>camelCase<a class="headerlink" href="#camelcase" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Escribir palabras en minúsculas y separarlas con mayúsculas.</p></li>
+<li><p><strong>Ejemplo:</strong> <code class="docutils literal notranslate"><span class="pre">calculateAverage</span></code>, <code class="docutils literal notranslate"><span class="pre">printSquare</span></code>, <code class="docutils literal notranslate"><span class="pre">sideLength</span></code>.</p></li>
+<li><p><strong>Nota:</strong> En Python, el camelCase se usa principalmente para nombres de clases.</p></li>
+</ul>
+</section>
+<section id="pascalcase">
+<h3>PascalCase<a class="headerlink" href="#pascalcase" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Propósito:</strong> Escribir palabras en mayúsculas y separarlas con mayúsculas.</p></li>
+<li><p><strong>Ejemplo:</strong> <code class="docutils literal notranslate"><span class="pre">CalculateAverage</span></code>, <code class="docutils literal notranslate"><span class="pre">PrintSquare</span></code>, <code class="docutils literal notranslate"><span class="pre">SideLength</span></code>.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="actividad">
+<h1>Actividad<a class="headerlink" href="#actividad" title="Permalink to this heading">#</a></h1>
+<p>Realizar la documentación del repositorio del sistema de login que se encuentra en el siguiente enlace:</p>
+<p>enlace</p>
+<p>Realice toda la documentación del código usando el mismo estilo.</p>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -520,11 +915,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="Unidad13.html"
+       href="Unidades/Unidad_12/testing.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unidad 13: Computación en la nube</p>
+        <p class="prev-next-title">Testing de Software</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -546,9 +941,46 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Unidad 12: Implementación, integración y pruebas</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#espere-aca-el-contenido-de-las-siguientes-versiones">Espere acá el contenido de las siguientes versiones</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-software">Documentación de software.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-documentacion-de-software">Tipos de documentación de software</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-requerimientos-requirements-documentation">Documentación de Requerimientos (Requirements Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-diseno-design-documentation">Documentación de Diseño (Design Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-codigo-code-documentation">Documentación de Código (Code Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-pruebas-testing-documentation">Documentación de Pruebas (Testing Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-proyecto-project-documentation">Documentación de Proyecto (Project Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-configuracion-configuration-documentation">Documentación de Configuración (Configuration Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-despliegue-deployment-documentation">Documentación de Despliegue (Deployment Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-usuarios-user-documentation">Documentación de Usuarios (User Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-api-api-documentation">Documentación de API (API Documentation):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-de-mantenimiento-maintenance-documentation">Documentación de Mantenimiento (Maintenance Documentation):</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#veamos-la-documentacion-de-codigo">Veamos la documentación de código</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docstrings">Docstrings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diferentes-modelos-de-docstrings">Diferentes modelos de docstrings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#estandares-de-codificacion">Estándares de codificación</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-son-importantes-los-estandares-de-codificacion">¿Por qué son importantes los estándares de codificación?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-incluyen-los-estandares-de-codificacion">¿Qué incluyen los estándares de codificación?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-estandar-pep">El estándar PEP</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#snake-case-vs-camelcase-y-pascalcase">snake_case vs. camelCase y PascalCase</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#snake-case">snake_case</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#camelcase">camelCase</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pascalcase">PascalCase</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad">Actividad</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
