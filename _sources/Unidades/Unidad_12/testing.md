@@ -129,3 +129,24 @@ Para ilustrar cómo se aplican las pruebas de software en un proyecto grande, us
 * Integración continua de código y pruebas automáticas en cada fase del desarrollo.
 
 ---
+
+## Sesión práctica de Testing (unitarias, integración)
+
+::::{card-carousel} 1
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: https://github.com/johanpina/testing_class/tree/main
+**💬 Repositorio de testing**
+^^^
+```{image} https://banner2.cleanpng.com/20180331/udw/kisspng-social-media-github-computer-icons-logo-github-5ac0188083c4f5.8572681115225386245397.jpg
+:height: 100
+```
+
+Repositorio con práctica de testing
++++
+Explore this repo {fas}`arrow-right`
+:::
+::::
