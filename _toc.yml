@@ -55,4 +55,6 @@ chapters:
     - file: "Unidades/Unidad_10/EvaluemosLoAprendido"
 - file: Unidad11
 - file: Unidad12
+  sections:
+    - file: "Unidades/Unidad_12/testing"
 - file: Unidad13
